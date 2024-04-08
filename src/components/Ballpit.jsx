@@ -103,7 +103,6 @@ function Ballpit() {
         gl={{ stencil: false, antialias: false }}
         camera={{ position: [0, 0, 15], fov: 50, near: 17, far: 40 }}
       >
-        {/* <color attach="background" args={["black"]} /> */}
         <Physics
           gravity={[0, -25, 0]}
           defaultContactMaterial={{ restitution: 0.1, friction: 0 }}

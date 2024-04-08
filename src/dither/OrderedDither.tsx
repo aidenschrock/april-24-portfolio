@@ -2,7 +2,6 @@
 
 import { Uniform } from "three";
 import { Effect } from "postprocessing";
-import orderedDitherShader from "./orderedDitherShader.glsl";
 import { forwardRef, useMemo } from "react";
 
 //TODO: Change hardcoded pattern to generative and pass via SSBO?
@@ -289,3 +288,5 @@ export const OrderedDither = forwardRef(({ ...props }: IDitherProps, ref) => {
   const effect = useMemo(() => new DitherEffect({ ...props }), [props]);
   return <primitive object={effect} dispose={null} ref={ref} />;
 });
+
+OrderedDither.displayName = "OrderedDither";

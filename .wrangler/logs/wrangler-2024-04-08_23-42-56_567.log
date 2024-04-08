@@ -1,0 +1,177 @@
+
+--- 2024-04-08T23:42:56.640Z debug
+🐛 Writing logs to ".wrangler/logs/wrangler-2024-04-08_23-42-56_567.log"
+---
+
+--- 2024-04-08T23:42:56.640Z debug
+Failed to load .env file ".env": Error: ENOENT: no such file or directory, open '.env'
+    at Object.openSync (node:fs:602:3)
+    at Object.readFileSync (node:fs:470:35)
+    at tryLoadDotEnv (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:122671:72)
+    at loadDotEnv (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:122680:12)
+    at /Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:146614:20
+    at /Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:130116:16
+    at maybeAsyncResult (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:128337:44)
+    at /Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:130115:14
+    at /Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:128324:22
+    at Array.reduce (<anonymous>) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '.env'
+}
+---
+
+--- 2024-04-08T23:42:56.800Z warn
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNo compatibility_date was specified. Using today's date: 2024-04-08.[0m
+
+  Pass it in your terminal:
+  ```
+  --compatibility-date=2024-04-08
+  ```
+  See [4mhttps://developers.cloudflare.com/workers/platform/compatibility-dates/[0m for more information.
+
+
+---
+
+--- 2024-04-08T23:42:56.807Z info
+Attaching additional modules:
+---
+
+--- 2024-04-08T23:42:56.811Z log
+[90m┌───────────────────────────────────────────[39m[90m┬──────[39m[90m┬──────────┐[39m
+[90m│[39m[34m Name                                      [39m[90m│[39m[34m Type [39m[90m│[39m[34m Size     [39m[90m│[39m
+[90m├───────────────────────────────────────────[39m[90m┼──────[39m[90m┼──────────┤[39m
+[90m│[39m __next-on-pages-dist__/cache/adaptor.js   [90m│[39m esm  [90m│[39m 2.03 KiB [90m│[39m
+[90m├───────────────────────────────────────────[39m[90m┼──────[39m[90m┼──────────┤[39m
+[90m│[39m __next-on-pages-dist__/cache/cache-api.js [90m│[39m esm  [90m│[39m 0.43 KiB [90m│[39m
+[90m├───────────────────────────────────────────[39m[90m┼──────[39m[90m┼──────────┤[39m
+[90m│[39m __next-on-pages-dist__/cache/kv.js        [90m│[39m esm  [90m│[39m 0.31 KiB [90m│[39m
+[90m└───────────────────────────────────────────[39m[90m┴──────[39m[90m┴──────────┘[39m
+---
+
+--- 2024-04-08T23:42:56.827Z log
+✨ Compiled Worker successfully
+---
+
+--- 2024-04-08T23:42:56.827Z debug
+Writing additional module to output /Users/aiden/development/april-24-portfolio/.wrangler/tmp/pages-uqCiBY/__next-on-pages-dist__/cache/adaptor.js
+---
+
+--- 2024-04-08T23:42:56.828Z debug
+Writing additional module to output /Users/aiden/development/april-24-portfolio/.wrangler/tmp/pages-uqCiBY/__next-on-pages-dist__/cache/cache-api.js
+---
+
+--- 2024-04-08T23:42:56.828Z debug
+Writing additional module to output /Users/aiden/development/april-24-portfolio/.wrangler/tmp/pages-uqCiBY/__next-on-pages-dist__/cache/kv.js
+---
+
+--- 2024-04-08T23:42:57.185Z log
+ ⛅️ wrangler 3.17.0 (update available [32m3.48.0[39m)
+[38;2;255;136;0m-------------------------------------------------------[39m
+---
+
+--- 2024-04-08T23:42:57.186Z warn
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m--local is no longer required and will be removed in a future version.[0m
+
+  `wrangler dev` now uses the local Cloudflare Workers runtime by default. 🎉
+
+
+---
+
+--- 2024-04-08T23:42:57.191Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run dev","properties":{"local":true,"usesTypeScript":false}}.
+---
+
+--- 2024-04-08T23:42:57.192Z debug
+Failed to load .env file "/Users/aiden/development/april-24-portfolio/.dev.vars": Error: ENOENT: no such file or directory, open '/Users/aiden/development/april-24-portfolio/.dev.vars'
+    at Object.openSync (node:fs:602:3)
+    at Object.readFileSync (node:fs:470:35)
+    at tryLoadDotEnv (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:122671:72)
+    at loadDotEnv (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:122680:12)
+    at getVarsForDev (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:150297:18)
+    at getBindings (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:151219:10)
+    at getBindingsAndAssetPaths (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:151176:20)
+    at getDevReactElement (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:150840:40)
+    at startDev (/Users/aiden/Library/Application Support/fnm/node-versions/v20.5.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:150903:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/aiden/development/april-24-portfolio/.dev.vars'
+}
+---
+
+--- 2024-04-08T23:42:57.221Z debug
+Writing additional module to output /Users/aiden/development/april-24-portfolio/.wrangler/tmp/dev-k5umZL/__next-on-pages-dist__/cache/adaptor.js
+---
+
+--- 2024-04-08T23:42:57.222Z debug
+Writing additional module to output /Users/aiden/development/april-24-portfolio/.wrangler/tmp/dev-k5umZL/__next-on-pages-dist__/cache/cache-api.js
+---
+
+--- 2024-04-08T23:42:57.222Z debug
+Writing additional module to output /Users/aiden/development/april-24-portfolio/.wrangler/tmp/dev-k5umZL/__next-on-pages-dist__/cache/kv.js
+---
+
+--- 2024-04-08T23:42:57.224Z log
+[2m⎔ Starting local server...[22m
+---
+
+--- 2024-04-08T23:42:57.233Z warn
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mParsed 1 valid header rule.[0m
+
+
+---
+
+--- 2024-04-08T23:42:58.350Z debug
+Checking if domain has Access enabled: dash.cloudflare.com
+---
+
+--- 2024-04-08T23:42:58.350Z debug
+Access switch not cached for: dash.cloudflare.com
+---
+
+--- 2024-04-08T23:42:58.496Z debug
+Caching access switch for: dash.cloudflare.com
+---
+
+--- 2024-04-08T23:42:58.707Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/user
+---
+
+--- 2024-04-08T23:42:58.707Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2024-04-08T23:42:58.707Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2024-04-08T23:42:58.707Z debug
+-- END CF API REQUEST
+---
+
+--- 2024-04-08T23:42:59.087Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2024-04-08T23:42:59.088Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2024-04-08T23:42:59.088Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2024-04-08T23:42:59.088Z debug
+-- END CF API RESPONSE
+---
+
+--- 2024-04-08T23:42:59.088Z debug
+Saving to cache: {"userId":"2e098fa1c4f65a6b757dcf17d49075f4"}
+---
+
+--- 2024-04-08T23:42:59.089Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run pages dev","properties":{}}.
+---
