@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "preview": "pnpm dlx @cloudflare/next-on-pages && wrangler pages dev .vercel/output/static --compatibility-flag nodejs_compat",
+    "preview": "npx @cloudflare/next-on-pages@1 && wrangler pages dev .vercel/output/static --compatibility-flag nodejs_compat",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
