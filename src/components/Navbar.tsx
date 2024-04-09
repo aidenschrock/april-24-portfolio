@@ -29,7 +29,11 @@ function Navbar() {
 
   return (
     <>
-      <nav className="hidden uppercase font-overpass z-20 fixed backdrop-blur-md w-full md:flex items-center justify-between px-24 py-6">
+      <nav
+        aria-label="Main menu"
+        role="navigation"
+        className="hidden uppercase font-overpass z-20 fixed backdrop-blur-md w-full md:flex items-center justify-between px-24 py-6"
+      >
         <h4 className="text-2xl  font-bold italic">Aiden Schrock</h4>
         <ul className="flex gap-4 text-2xl font-bold  text-slate-200 ">
           <li
@@ -53,10 +57,15 @@ function Navbar() {
         </ul>
       </nav>
 
-      <nav className="flex font-overpass flex-col fixed w-full z-20 backdrop-blur-md  uppercase md:hidden">
+      <nav
+        aria-expanded={`${mobileNavShow ? "true" : "false"}`}
+        aria-label="Mobile menu"
+        role="navigation"
+        className="flex font-overpass flex-col fixed w-full z-20 backdrop-blur-md  uppercase md:hidden"
+      >
         <div className="flex p-6 items-center justify-between w-full z-20">
           <h4 className="text-xl  font-bold italic">Aiden Schrock</h4>
-          <button onClick={toggleMenu}>
+          <button aria-label="Mobile Menu" onClick={toggleMenu}>
             <svg
               className={`fill-slate-200 ${mobileNavShow ? "hidden" : "flex"}`}
               xmlns="http://www.w3.org/2000/svg"
