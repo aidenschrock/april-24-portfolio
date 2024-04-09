@@ -39,26 +39,26 @@ export default function Home() {
   return (
     <ReactLenis root options={{ duration: 0.8 }}>
       <Navbar />
-      <main className="flex min-h-screen font-overpass flex-col items-center justify-between">
+      <main className="flex min-h-screen flex-col items-center justify-between font-overpass">
         <div
           id="home"
-          className="h-screen w-full flex items-center justify-center "
+          className="flex h-screen w-full items-center justify-center "
         >
-          <h1 className="text-6xl font-dirty sm:text-8xl md:text-9xl lg:text-[11rem] xl:text-[13rem] -mt-12 text-center">
+          <h1 className="-mt-12 text-center font-dirty text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] xl:text-[13rem]">
             Creative <br /> Developer
           </h1>
         </div>
         <div
           id="about"
-          className="w-full flex flex-col lg:flex-row justify-center p-6 sm:p-14 gap-32"
+          className="flex w-full flex-col justify-center gap-32 p-6 sm:p-14 lg:flex-row"
         >
           <div>
-            <h2 className="text-5xl font-dirty sm:text-7xl md:text-8xl lg:text-9xl">
+            <h2 className="font-dirty text-5xl sm:text-7xl md:text-8xl lg:text-9xl">
               Hello!
             </h2>
           </div>
 
-          <p className="text-xl sm:text-2xl lg:w-1/2 max-w-3xl">
+          <p className="max-w-3xl text-xl sm:text-2xl lg:w-1/2">
             My name is Aiden, and I&apos;m an independent creative developer
             based in Austin, TX. My main tools are Three.js and GSAP, enabling
             me to seamlessly blend captivating animations with the power of 3D
@@ -67,8 +67,8 @@ export default function Home() {
             impression!
           </p>
         </div>
-        <div id="work" className="w-full h-screen flex flex-col justify-center">
-          <h2 className="text-3xl font-dirty text-center sm:text-4xl lg:text-5xl">
+        <div id="work" className="flex h-screen w-full flex-col justify-center">
+          <h2 className="text-center font-dirty text-3xl sm:text-4xl lg:text-5xl">
             Selected Work
           </h2>
           <a
@@ -76,10 +76,10 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="border-t-2 gap-y-4 border-white p-2 lg:p-6 bg-slate-950/50">
-              <div className="flex justify-between items-center max-w-7xl w-full mx-auto">
+            <div className="gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+              <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
-                  <p className="text-2xl sm:text-3xl lg:text-4xl  font-bold">
+                  <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Recolude
                   </p>
 
@@ -87,9 +87,9 @@ export default function Home() {
                     Web Design | Svelte, Threejs, Tailwind
                   </p>
                 </div>
-                <div className="h-12 w-12 md:h-16 md:w-16 mr-4 sm:mr-16">
+                <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
                   <svg
-                    className="fill-white h-full w-full hover:translate-x-2 hover:-translate-y-2 transition-transform"
+                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 -960 960 960"
@@ -106,10 +106,10 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="border-y-2 gap-y-4 border-white p-2 lg:p-6 bg-slate-950/50">
-              <div className="flex justify-between items-center max-w-7xl w-full mx-auto">
+            <div className="gap-y-4 border-y-2 border-white bg-slate-950/50 p-2 lg:p-6">
+              <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
-                  <p className="text-2xl sm:text-3xl lg:text-4xl  font-bold">
+                  <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Floating Models
                   </p>
 
@@ -117,9 +117,9 @@ export default function Home() {
                     Experimental | React Three Fiber
                   </p>
                 </div>
-                <div className="h-12 w-12 md:h-16 md:w-16 mr-4 sm:mr-16">
+                <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
                   <svg
-                    className="fill-white h-full w-full hover:translate-x-2 hover:-translate-y-2 transition-transform"
+                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 -960 960 960"
@@ -133,28 +133,28 @@ export default function Home() {
           </a>
         </div>
         <div
-          className=" flex gap-y-16  flex-col items-center w-full"
+          className="flex w-full flex-col items-center gap-y-16"
           id="services"
         >
-          <div className="flex  flex-col-reverse lg:flex-row 2xl:max-h-96 max-w-7xl">
+          <div className="flex  max-w-7xl flex-col-reverse lg:flex-row 2xl:max-h-96">
             <div className="p-6  lg:flex lg:flex-col lg:justify-center">
-              <h3 className="text-4xl sm:text-5xl font-dirty">Branding</h3>
+              <h3 className="font-dirty text-4xl sm:text-5xl">Branding</h3>
               <p className=" text-base sm:text-2xl">
                 Branding goes beyond logos and design, encompassing the entire
                 customer experience, company culture, and values. A strong brand
                 can lead to increased recognition and customer loyalty.
               </p>
             </div>
-            <div className=" h-80 lg:h-[500px] aspect-square">
+            <div className="aspect-square h-80 select-none lg:h-[500px]">
               <BrandBlocks />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row max-w-7xl">
-            <div className="flex h-80 lg:h-[500px] aspect-square">
+          <div className="flex max-w-7xl flex-col lg:flex-row">
+            <div className="flex aspect-square h-80 select-none lg:h-[500px]">
               <Ballpit />
             </div>
-            <div className="p-6  lg:flex lg:flex-col lg:justify-center">
-              <h3 className="text-4xl sm:text-5xl font-dirty">
+            <div className="p-6 lg:flex lg:flex-col lg:justify-center">
+              <h3 className="font-dirty text-4xl sm:text-5xl">
                 3D Design & Animation
               </h3>
               <p className=" text-base sm:text-2xl">
@@ -167,20 +167,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="min-h-screen w-full flex flex-col justify-center">
+        <div className="flex min-h-screen w-full flex-col justify-center">
           <RevealText />
         </div>
         <div
           id="contact"
-          className="flex flex-col p-6 gap-y-44 py-40  max-w-7xl mx-auto"
+          className="mx-auto flex max-w-7xl flex-col gap-y-44  p-6 py-40"
         >
-          <h2 className=" flex text-6xl font-dirty sm:text-7xl lg:text-8xl">
+          <h2 className=" flex font-dirty text-6xl sm:text-7xl lg:text-8xl">
             Let&apos;s Work Together
           </h2>
 
           <div className="flex flex-col items-end text-right  text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             <p id="email">AidenSchrock3D@gmail.com</p>
-            <div className="flex gap-x-4 mt-4">
+            <div className="mt-4 flex gap-x-4">
               <div
                 id="tooltip"
                 className={`${
@@ -198,7 +198,7 @@ export default function Home() {
               </div>
               <svg
                 onClick={copy}
-                className="fill-white hover:fill-pink-600 w-12 lg:w-16 h-auto"
+                className="h-auto w-12 fill-white hover:fill-pink-600 lg:w-16"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
                 width="24"
@@ -206,7 +206,7 @@ export default function Home() {
                 <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Z" />
               </svg>
               <svg
-                className="fill-white hover:fill-pink-600 w-12 lg:w-16 h-auto"
+                className="h-auto w-12 fill-white hover:fill-pink-600 lg:w-16"
                 onClick={sendEmail}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
@@ -235,7 +235,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex grow justify-center h-100vh w-screen items-center fixed top-0 left-0 -z-10 inset-0">
+        <div className="h-100vh fixed inset-0 left-0 top-0 -z-10 flex w-screen grow items-center justify-center">
           <SquareGradient />
         </div>
       </main>

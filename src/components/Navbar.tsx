@@ -32,25 +32,25 @@ function Navbar() {
       <nav
         aria-label="Main menu"
         role="navigation"
-        className="hidden uppercase font-overpass z-20 fixed backdrop-blur-md w-full md:flex items-center justify-between px-24 py-6"
+        className="fixed z-20 hidden w-full items-center justify-between px-24 py-6 font-overpass uppercase backdrop-blur-md md:flex"
       >
         <h4 className="text-2xl  font-bold italic">Aiden Schrock</h4>
         <ul className="flex gap-4 text-2xl font-bold  text-slate-200 ">
           <li
             onClick={() => lenis?.scrollTo("#home")}
-            className="hover:text-pink-600 cursor-pointer"
+            className="cursor-pointer hover:text-pink-600"
           >
             Home
           </li>
           <li
             onClick={() => lenis?.scrollTo("#work")}
-            className="hover:text-pink-600 cursor-pointer"
+            className="cursor-pointer hover:text-pink-600"
           >
             Work
           </li>
           <li
             onClick={() => lenis?.scrollTo("#contact")}
-            className="hover:text-pink-600 cursor-pointer"
+            className="cursor-pointer hover:text-pink-600"
           >
             Contact
           </li>
@@ -61,9 +61,9 @@ function Navbar() {
         aria-expanded={`${mobileNavShow ? "true" : "false"}`}
         aria-label="Mobile menu"
         role="navigation"
-        className="flex font-overpass flex-col fixed w-full z-20 backdrop-blur-md  uppercase md:hidden"
+        className="fixed z-20 flex w-full flex-col font-overpass uppercase  backdrop-blur-md md:hidden"
       >
-        <div className="flex p-6 items-center justify-between w-full z-20">
+        <div className="z-20 flex w-full items-center justify-between p-6">
           <h4 className="text-xl  font-bold italic">Aiden Schrock</h4>
           <button aria-label="Mobile Menu" onClick={toggleMenu}>
             <svg
@@ -88,11 +88,11 @@ function Navbar() {
         </div>
 
         <div
-          className={`text-3xl bg-black h-screen w-screen  z-10 absolute text-slate-200  ${
-            mobileNavShow ? "flex blockScroll" : "hidden"
+          className={`absolute z-10 h-screen w-screen  bg-black text-3xl text-slate-200  ${
+            mobileNavShow ? "blockScroll flex" : "hidden"
           }`}
         >
-          <ul className="flex flex-col gap-8 mr-0 ml-auto text-right pr-12 pb-32 justify-end">
+          <ul className="ml-auto mr-0 flex flex-col justify-end gap-8 pb-32 pr-12 text-right">
             <li>
               <a href="#home">Home</a>
             </li>
