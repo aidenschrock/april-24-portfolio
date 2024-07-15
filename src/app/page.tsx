@@ -72,6 +72,37 @@ export default function Home() {
             Selected Work
           </h2>
           <a
+            href="https://spongebobfishmojifactory.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+              <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+                <div className="flex flex-col gap-y-4 ">
+                  <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
+                    Spongebob Fishmoji Factory
+                  </p>
+
+                  <p className=" text-sm sm:text-base lg:text-lg xl:text-xl">
+                    Development | Next.js, GSAP, Tailwind | Agency: Pretty Big
+                    Monster
+                  </p>
+                </div>
+                <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
+                  <svg
+                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 -960 960 960"
+                    width="24"
+                  >
+                    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
             href="https://www.spilltracker.org/"
             target="_blank"
             rel="noreferrer"
