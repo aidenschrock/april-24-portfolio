@@ -4,8 +4,8 @@ import { useMemo, useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Center } from "@react-three/drei";
 import * as THREE from "three";
-import fragment from "../glsl/fragment.glsl";
-import vertex from "../glsl/vertex.glsl";
+import fragment from "../glsl/home/fragment.glsl";
+import vertex from "../glsl/home/vertex.glsl";
 
 function Plane() {
   const plane = useRef();
@@ -19,7 +19,7 @@ function Plane() {
       uColor: { value: palette },
       uResolution: { value: new THREE.Vector4() },
     }),
-    []
+    [],
   );
 
   useFrame((state) => {
@@ -48,7 +48,7 @@ function SquareGradient() {
       <div
         ref={container}
         id="canvasContainer"
-        className="w-64 h-64 sm:w-80 md:w-[400px] md:h-[400px] lg:h-[500px] lg:w-[500px] rounded-3xl overflow-hidden "
+        className="h-64 w-64 overflow-hidden rounded-3xl sm:w-80 md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] "
       >
         <Canvas
           resize={{ scroll: false }}

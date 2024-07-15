@@ -8,6 +8,7 @@ import RevealText from "@/components/RevealText";
 import SquareGradient from "@/components/SquareGradient";
 import Ballpit from "@/components/Ballpit";
 import BrandBlocks from "@/components/BrandBlocks";
+import Link from "next/link";
 
 export default function Home() {
   // lenis instance
@@ -132,11 +133,7 @@ export default function Home() {
               </div>
             </div>
           </a>
-          <a
-            href="https://recolude-marketing-2024.pages.dev/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link href="/recolude">
             <div className="gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
@@ -161,7 +158,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
           <a
             href="https://watermelon-wine-three.vercel.app/"
             target="_blank"
