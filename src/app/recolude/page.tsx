@@ -17,7 +17,7 @@ export default function Recolude() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-16 pl-6 pt-6 lg:w-20"
+            className="w-16 stroke-slate-300 pl-6 pt-6 hover:stroke-white  lg:w-20"
           >
             <path
               strokeLinecap="round"

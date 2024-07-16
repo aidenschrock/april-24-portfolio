@@ -1,6 +1,20 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+
 export default function ProjectStepper() {
+  let projectArray = ["/spongebob", "/spilltracker", "/recolude"];
+  const router = useRouter();
+  const pathname = usePathname();
+
   function nextProject() {
-    console.log("next page");
+    if (pathname.includes("spongebob")) {
+      router.push("/spilltracker");
+    } else if (pathname.includes("spilltracker")) {
+      router.push("/recolude");
+    } else {
+      router.push("/spongebob");
+    }
   }
   return (
     <button
