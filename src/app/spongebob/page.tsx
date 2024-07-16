@@ -27,7 +27,7 @@ export default function Spongebob() {
         <img
           className="rounded"
           alt="Bikini Bottom Fishmoji Factory"
-          src="fishmoji.png"
+          src="fishmoji.webp"
         />
         <div className="mt-10 flex flex-col items-center justify-center text-left">
           <h2 className="w-full">
@@ -80,7 +80,7 @@ export default function Spongebob() {
           </a>
           <h2 className="mt-12 w-full font-dirty text-2xl">About</h2>
           <p>
-            Spongebob Squarepants is an iconic children's show- one that I
+            Spongebob Squarepants is an iconic children&#8217;s show- one that I
             myself grew up watching. The 25th anniversary of the show was this
             year(2024) and Nickelodeon wanted a special site to launch during
             the Kids Choice Awards.
@@ -95,14 +95,14 @@ export default function Spongebob() {
             </a>{" "}
             is an agency that is known for their creative work with the
             entertainment industry. They reached out to partner together to
-            create this Fishmoji Maker. Choose your fish, change it's features
-            and outfits, and get a fishy name. Export your fish to share with
-            your friends!
+            create this Fishmoji Maker. Choose your fish, change it&#8217;s
+            features and outfits, and get a fishy name. Export your fish to
+            share with your friends!
           </p>
           <img
             className="mt-10 rounded"
             alt="fish customizing screenshot"
-            src="spongebob-maker.png"
+            src="spongebob-maker.webp"
           />
           <ProjectStepper />
         </div>

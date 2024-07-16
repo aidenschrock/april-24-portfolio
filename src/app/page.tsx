@@ -60,10 +60,10 @@ export default function Home() {
           </div>
 
           <p className="max-w-3xl text-xl sm:text-2xl lg:w-1/2">
-            My name is Aiden, and I&apos;m an independent creative developer
+            My name is Aiden, and I&#8217;m an independent creative developer
             based in Austin, TX. My main tools are Three.js and GSAP, enabling
             me to seamlessly blend captivating animations with the power of 3D
-            graphics. Let&apos;s bring your ideas to life by creating websites
+            graphics. Let&#8217;s bring your ideas to life by creating websites
             that not only engage your audience but also leave a lasting
             impression!
           </p>
@@ -210,7 +210,7 @@ export default function Home() {
               <p className=" text-base sm:text-2xl">
                 Immersive elements enhance user engagement, boost visual appeal,
                 facilitate storytelling, and provide interactive product
-                showcases. They convey your brand&apos;s personality, improve
+                showcases. They convey your brand&#8217;s personality, improve
                 user experiences, simplify educational content, and drive
                 conversions.
               </p>
@@ -225,7 +225,7 @@ export default function Home() {
           className="mx-auto flex max-w-7xl flex-col gap-y-44  p-6 py-40"
         >
           <h2 className=" flex font-dirty text-6xl sm:text-7xl lg:text-8xl">
-            Let&apos;s Work Together
+            Let&#8217;s Work Together
           </h2>
 
           <div className="flex flex-col items-end text-right  text-xl sm:text-2xl md:text-3xl lg:text-4xl">

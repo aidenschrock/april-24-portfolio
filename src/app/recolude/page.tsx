@@ -615,7 +615,7 @@ export default function Recolude() {
           <img
             className="mt-10 rounded"
             alt="recolude homepage"
-            src="recolude-home.png"
+            src="recolude-home.webp"
           />
           <h2 className="mt-12 w-full font-dirty text-2xl">About</h2>
           <p>
@@ -630,12 +630,12 @@ export default function Recolude() {
             <img
               className="mt-10 2xl:w-1/2"
               alt="comparison of old Recolude logo to new design"
-              src="logo-rebrand.png"
+              src="logo-rebrand.webp"
             />
             <img
               className="mt-4 w-3/4 rounded 2xl:w-1/2"
               alt="Recolude logo mark variations"
-              src="recolude-square.png"
+              src="recolude-square.webp"
             />
           </div>
 
@@ -643,7 +643,7 @@ export default function Recolude() {
           <img
             className="mt-10 rounded"
             alt="a mockup showing various pages from the Recolude website"
-            src="RecoludeMock2024.png"
+            src="RecoludeMock2024.webp"
           />
           <h3 className="mb-8 mt-2 w-full">Web Design</h3>
           <div className="hidden lg:block">

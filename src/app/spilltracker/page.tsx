@@ -27,7 +27,7 @@ export default function Spilltracker() {
         <img
           className="rounded"
           alt="Spilltracker homepage"
-          src="spilltracker.png"
+          src="spilltracker.webp"
         />
         <div className="mt-10 flex flex-col items-center justify-center text-left">
           <h2 className="w-full">
