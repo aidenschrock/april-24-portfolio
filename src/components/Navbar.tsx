@@ -6,17 +6,6 @@ function Navbar() {
 
   const lenis = useLenis();
 
-  // let menu: HTMLElement;
-  // let hero: HTMLElement;
-  // let about: HTMLElement;
-  // let contact: HTMLElement;
-  // useEffect(() => {
-  //   menu = document.getElementById("menu")!;
-  //   hero = document.getElementById("hero")!;
-  //   about = document.getElementById("about")!;
-  //   contact = document.getElementById("contact")!;
-  // }, []);
-
   function toggleMenu() {
     setMobileNavShow(!mobileNavShow);
   }
@@ -32,7 +21,7 @@ function Navbar() {
       <nav
         aria-label="Main menu"
         role="navigation"
-        className="fixed z-20 hidden w-full items-center justify-between px-24 py-6 font-overpass uppercase backdrop-blur-md md:flex"
+        className="font-oxygenLight fixed z-20 hidden w-full items-center justify-between px-24 py-6 uppercase backdrop-blur-md md:flex"
       >
         <h4 className="text-2xl  font-bold italic">Aiden Schrock</h4>
         <ul className="flex gap-4 text-2xl font-bold  text-slate-200 ">
@@ -61,7 +50,7 @@ function Navbar() {
         aria-expanded={`${mobileNavShow ? "true" : "false"}`}
         aria-label="Mobile menu"
         role="navigation"
-        className="fixed z-20 flex w-full flex-col font-overpass uppercase  backdrop-blur-md md:hidden"
+        className="font-oxygenLight fixed z-20 flex w-full flex-col uppercase  backdrop-blur-md md:hidden"
       >
         <div className="z-20 flex w-full items-center justify-between p-6">
           <h4 className="text-xl  font-bold italic">Aiden Schrock</h4>

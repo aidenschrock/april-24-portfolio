@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        overpass: ["var(--font-overpass)"],
         dirty: ["var(--font-dirty)"],
         oxygenLight: ["var(--font-oxygen-light)"],
         oxygen: ["var(--font-oxygen)"],

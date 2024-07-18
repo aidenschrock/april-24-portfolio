@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <ReactLenis root options={{ duration: 0.8 }}>
       <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between font-overpass">
+      <main className="font-oxygen flex min-h-screen flex-col items-center justify-between">
         <div
           id="home"
           className="flex h-screen w-full items-center justify-center "
@@ -73,21 +73,21 @@ export default function Home() {
             Selected Work
           </h2>
           <Link href="/spongebob">
-            <div className="gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Spongebob Fishmoji Factory
                   </p>
 
-                  <p className=" text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
                     Development | Next.js, GSAP, Tailwind | Agency: Pretty Big
                     Monster
                   </p>
                 </div>
                 <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
                   <svg
-                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
+                    className="live-button-icon h-full w-full fill-white transition-transform"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 -960 960 960"
@@ -100,20 +100,20 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/spilltracker">
-            <div className="gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Spilltracker
                   </p>
 
-                  <p className=" text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
                     Development | GSAP, Cloudflare, Webflow | Agency Drop-in
                   </p>
                 </div>
                 <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
                   <svg
-                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
+                    className="live-button-icon h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 -960 960 960"
@@ -126,20 +126,20 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/recolude">
-            <div className="gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Recolude
                   </p>
 
-                  <p className=" text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className=" font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
                     Web Design | Svelte, Threejs, Tailwind
                   </p>
                 </div>
                 <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
                   <svg
-                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
+                    className="live-button-icon h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 -960 960 960"
@@ -156,20 +156,20 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="gap-y-4 border-y-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-y-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Floating Models
                   </p>
 
-                  <p className=" text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className=" font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
                     Experimental | React Three Fiber
                   </p>
                 </div>
                 <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
                   <svg
-                    className="h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
+                    className="live-button-icon h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 -960 960 960"
@@ -187,9 +187,9 @@ export default function Home() {
           id="services"
         >
           <div className="flex  max-w-7xl flex-col-reverse lg:flex-row 2xl:max-h-96">
-            <div className="p-6  lg:flex lg:flex-col lg:justify-center">
+            <div className="p-6 text-right  lg:flex lg:flex-col lg:justify-center">
               <h3 className="font-dirty text-4xl sm:text-5xl">Branding</h3>
-              <p className=" text-base sm:text-2xl">
+              <p className=" max-w-lg text-base  sm:text-2xl">
                 Branding goes beyond logos and design, encompassing the entire
                 customer experience, company culture, and values. A strong brand
                 can lead to increased recognition and customer loyalty.
@@ -207,7 +207,7 @@ export default function Home() {
               <h3 className="font-dirty text-4xl sm:text-5xl">
                 3D Design & Animation
               </h3>
-              <p className=" text-base sm:text-2xl">
+              <p className=" max-w-lg text-base sm:text-2xl">
                 Immersive elements enhance user engagement, boost visual appeal,
                 facilitate storytelling, and provide interactive product
                 showcases. They convey your brand&#8217;s personality, improve
@@ -228,7 +228,7 @@ export default function Home() {
             Let&#8217;s Work Together
           </h2>
 
-          <div className="flex flex-col items-end text-right  text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+          <div className="font-oxygenBold flex flex-col items-end text-right text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             <p id="email">AidenSchrock3D@gmail.com</p>
             <div className="mt-4 flex gap-x-4">
               <div
@@ -268,20 +268,12 @@ export default function Home() {
           </div>
           <div className="socials flex gap-x-6 text-2xl sm:text-3xl lg:text-4xl ">
             <a
-              className="hover:text-pink-600"
+              className="font-oxygenLight hover:text-pink-600"
               href="https://www.linkedin.com/in/aiden-schrock/"
               target="_blank"
               rel="noreferrer"
             >
               Linkedin
-            </a>
-            <a
-              className="hover:text-pink-600"
-              href="https://twitter.com/AidenNSchrock"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Twitter
             </a>
           </div>
         </div>
