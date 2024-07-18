@@ -18,7 +18,7 @@ export default function ProjectStepper() {
   }
   return (
     <button
-      className="mt-12 flex w-full justify-center gap-4 rounded border-2 border-dotted border-[#872346] py-2 text-lg transition-colors hover:bg-[#872346]"
+      className="font-oxygen project-button mt-12 flex w-11/12 max-w-2xl items-center justify-center gap-4 rounded border-2 border-dotted border-white py-2 text-lg transition-colors hover:bg-slate-200 hover:text-black lg:text-2xl xl:text-3xl"
       onClick={nextProject}
     >
       Next Project{" "}
@@ -28,7 +28,7 @@ export default function ProjectStepper() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-6"
+        className="project-button-icon w-8 lg:w-10 xl:w-12"
       >
         <path
           strokeLinecap="round"

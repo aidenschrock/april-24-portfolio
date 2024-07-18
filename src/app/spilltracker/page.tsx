@@ -1,96 +1,70 @@
 "use client";
+import BackButton from "@/components/BackButton";
 import ProjectStepper from "@/components/ProjectStepper";
+import LiveButton from "@/components/LiveButton";
 import Link from "next/link";
 
 export default function Spilltracker() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="w-full max-w-screen-md">
-        <Link href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-16 stroke-slate-300  pl-6 pt-6 hover:stroke-white lg:w-20"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-            />
-          </svg>
-        </Link>
-      </div>
-      <div className="mx-6 mb-12 mt-10 max-w-screen-sm font-overpass">
+    <div className="mb-10 flex flex-col items-center justify-center">
+      <BackButton />
+      <div className="font-oxygen mb-12">
         <img
-          className="rounded"
+          className="h-auto w-full"
           alt="Spilltracker homepage"
-          src="spilltracker.webp"
+          src="spilltracker-home.webp"
         />
         <div className="mt-10 flex flex-col items-center justify-center text-left">
-          <h2 className="w-full">
-            <b className="text-lg">agency:</b> Hunt, Gather
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">client:</b> Resources Legacy Fund
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">services: </b>
-            development
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">tools:</b> Webflow, GSAP, Cloudflare
-          </h2>
-          <video
-            className="mt-10 rounded"
-            muted
-            loop
-            autoPlay
-            src="spilltracker.mov"
+          <div className="font-oxygenLight w-full px-2">
+            <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
+              <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+                <div className="h-16 w-8 rounded-tl-md bg-[#FEB92F] lg:w-12" />
+                <div className="flex w-full pl-4">
+                  <h2 className="font-oxygenBold flex-1 px-2">Agency:</h2>
+                  <h3 className="flex-[2] pr-2">Hunt, Gather</h3>
+                </div>
+              </div>
+              <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+                <div className="h-20 w-8 bg-[#14161F]  lg:w-12" />
+                <div className="flex w-full pl-4">
+                  <h2 className="font-oxygenBold flex-1 px-2 font-bold">
+                    Client:
+                  </h2>
+                  <h3 className="flex-[2] pr-2">Resources Legacy Fund</h3>
+                </div>
+              </div>
+              <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+                <div className="h-16 w-8 rounded-bl-md bg-[#111110] lg:w-12" />
+                <div className="flex w-full pl-4">
+                  <h2 className="font-oxygenBold flex-1 px-2 font-bold ">
+                    Tools:
+                  </h2>
+                  <h3 className="flex-[2] pr-2">Webflow, GSAP, Cloudflare</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            className="mt-20 h-auto w-full"
+            alt="Spilltracker mobile mockups"
+            src="spilltracker-mock-mobile.webp"
           />
-          <h3 className="mb-8 mt-2 w-full">
-            Spilltracker Realtime Updated Events
+          <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+            Spilltracker Mobile
           </h3>
-          <a
-            href="https://www.spilltracker.org/"
-            target="_blank"
-            className="mt-12 flex w-full justify-center gap-4 rounded border-2 border-dotted border-[#872346] py-2 text-lg transition-colors hover:bg-[#872346]"
-          >
-            Live Link{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </a>
-          <h2 className="mt-12 w-full font-dirty text-2xl">About</h2>
-          <p>
+
+          <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
+            About
+          </h2>
+          <p className="font-oxygenLight max-w-sm px-4 sm:max-w-md lg:text-2xl">
             This project was for Beyond Petrochemicals, a project by the
             non-profit Resource Legacy Fund. Some of my favorite features on
             this page include the dynamic list of accidents, the sticky ticker,
             and the parallax image scroll.
           </p>
-          <video
-            className="mt-10 rounded"
-            muted
-            loop
-            autoPlay
-            src="spilltracker-scroll.mov"
-          />
-          <h3 className="mb-8 mt-2 w-full">
-            Ticker Animation, Parallax Scroll
-          </h3>
+          <LiveButton link={"https://www.spilltracker.org/"} />
+
           <ProjectStepper />
         </div>
       </div>

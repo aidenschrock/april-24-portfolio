@@ -16,3 +16,19 @@ html {
   height: 98vh;
   width: 100%;
 }
+
+.project-button-icon {
+  transition: 0.1s ease-in;
+}
+.live-button-icon {
+  transition: 0.1s ease-in;
+}
+.project-button:hover {
+  .project-button-icon {
+    transform: translateX(50%);
+  }
+
+  .live-button-icon {
+    transform: translate(20%, -10%);
+  }
+}

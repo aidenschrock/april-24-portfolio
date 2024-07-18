@@ -1,35 +1,80 @@
 "use client";
-import Link from "next/link";
+
 import Lottie from "lottie-react";
 import mobileTrajectoryAnim from "../../lib/trajectory-anim/mobile.json";
 import desktopTrajectoryAnim from "../../lib/trajectory-anim/desktop.json";
 import RecoludeGrid from "@/components/RecoludeGrid";
 import ProjectStepper from "@/components/ProjectStepper";
+import BackButton from "@/components/BackButton";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Recolude() {
+  gsap.registerPlugin(useGSAP);
+  const recoludeHero = useRef(null);
+
+  // useGSAP(() => {
+  //   let tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: recoludeHero.current,
+  //       scrub: true,
+  //       pin: false,
+  //     },
+  //   });
+  //   tl.from(recoludeHero.current, {
+  //     yPercent: -30,
+  //     ease: "none",
+  //   }).to(recoludeHero.current, {
+  //     yPercent: 30,
+  //     ease: "none",
+  //   });
+  // });
+
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="w-full max-w-screen-md">
-        <Link href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-16 stroke-slate-300 pl-6 pt-6 hover:stroke-white  lg:w-20"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-            />
-          </svg>
-        </Link>
+    <div className="mb-10 flex flex-col items-center justify-center">
+      <BackButton />
+      <div className="relative w-full overflow-hidden">
+        <img
+          ref={recoludeHero}
+          className=" h-auto w-full"
+          src="recolude-mockup-2.webp"
+        />
       </div>
-      <div className="mx-6 mb-12 mt-10 max-w-screen-sm font-overpass">
+      <div className="mb-12 mt-10 flex w-full flex-col items-center justify-center">
+        <div className="font-oxygenLight w-full px-2">
+          <div className="mt-10 flex flex-col items-center justify-center text-left">
+            <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+              <div className="h-16 w-8 rounded-tl-md bg-[#5B1934] lg:w-12" />
+              <div className="flex w-full pl-4">
+                <h2 className="font-oxygenBold flex-1 px-2">Client:</h2>
+                <h3 className="flex-[2] pr-2">Recolude</h3>
+              </div>
+            </div>
+            <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+              <div className="h-20 w-8 bg-[#26142C]  lg:w-12" />
+              <div className="flex w-full pl-4">
+                <h2 className="font-oxygenBold flex-1 px-2 font-bold">
+                  Services:
+                </h2>
+                <h3 className="flex-[2] pr-2">
+                  branding, web design & development
+                </h3>
+              </div>
+            </div>
+            <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+              <div className="h-16 w-8 rounded-bl-md bg-[#21213E] lg:w-12" />
+              <div className="flex w-full pl-4">
+                <h2 className="font-oxygenBold flex-1 px-2 font-bold ">
+                  Tools:
+                </h2>
+                <h3 className="flex-[2] pr-2">Svelte, Three.js, Tailwind</h3>
+              </div>
+            </div>
+          </div>
+        </div>
         <svg
-          className="px-6"
+          className="mt-20 w-3/4 px-6 lg:py-20"
           id="a"
           data-name="Layer 1"
           viewBox="0 0 1881.75 448.38"
@@ -601,63 +646,56 @@ export default function Recolude() {
             />
           </g>
         </svg>
-        <div className="mt-10 flex flex-col items-center justify-center text-left">
-          <h2 className="w-full">
-            <b className="text-lg">client:</b> Recolude
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">services:</b> branding, web design &
-            development
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">tools:</b> Svelte, Three.js, Tailwind
-          </h2>
+        <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
+          About
+        </h2>
+        <p className="font-oxygenLight max-w-sm px-4 sm:max-w-md lg:text-2xl">
+          Recolude is the platform-agnostic solution for 3D spatial analytics &
+          recording for XR, Research, Gaming, and Mocap projects.
+        </p>
+        <p className="font-oxygenLight mt-4 max-w-sm px-4 sm:max-w-md lg:text-2xl">
+          The goal of our collaboration was to improve their brand design and
+          give them a sleek new website.
+        </p>
+        <div className="flex w-full flex-col items-center justify-center lg:mt-24 lg:flex-row lg:flex-wrap">
           <img
-            className="mt-10 rounded"
-            alt="recolude homepage"
-            src="recolude-home.webp"
+            className="mt-10 w-full lg:w-1/2"
+            alt="comparison of old Recolude logo to new design"
+            src="logo-rebrand-2.webp"
           />
-          <h2 className="mt-12 w-full font-dirty text-2xl">About</h2>
-          <p>
-            Recolude is the platform-agnostic solution for 3D spatial analytics
-            & recording for XR, Research, Gaming, and Mocap projects.
-          </p>
-          <p className="mt-4">
-            The goal of our collaboration was to improve their brand design and
-            give them a sleek new website.
-          </p>
-          <div className="flex flex-col items-center justify-center 2xl:flex-row 2xl:flex-wrap">
-            <img
-              className="mt-10 2xl:w-1/2"
-              alt="comparison of old Recolude logo to new design"
-              src="logo-rebrand.webp"
-            />
-            <img
-              className="mt-4 w-3/4 rounded 2xl:w-1/2"
-              alt="Recolude logo mark variations"
-              src="recolude-square.webp"
-            />
-          </div>
-
-          <h3 className="mb-8 mt-2 w-full">Updated Logo</h3>
           <img
-            className="mt-10 rounded"
-            alt="a mockup showing various pages from the Recolude website"
-            src="RecoludeMock2024.webp"
+            className="mt-4 w-full lg:w-1/2"
+            alt="Recolude logo mark variations"
+            src="recolude-square-2.webp"
           />
-          <h3 className="mb-8 mt-2 w-full">Web Design</h3>
-          <div className="hidden lg:block">
-            <Lottie animationData={desktopTrajectoryAnim} loop={true} />
-          </div>
-          <div className=" lg:hidden">
-            <Lottie animationData={mobileTrajectoryAnim} loop={true} />
-          </div>
-
-          <h3 className="mb-8 mt-2 w-full">Trajectory Animation</h3>
-          <RecoludeGrid />
-          <h3 className="mb-8 mt-2 w-full">Background Grid Shader</h3>
-          <ProjectStepper />
         </div>
+
+        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+          Updated Logo
+        </h3>
+        <img
+          className="mt-10 w-full"
+          alt="a mockup showing various pages from the Recolude website"
+          src="RecoludeMock2024-2.webp"
+        />
+        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+          Web Design
+        </h3>
+        <div className="hidden lg:block">
+          <Lottie animationData={desktopTrajectoryAnim} loop={true} />
+        </div>
+        <div className=" lg:hidden">
+          <Lottie animationData={mobileTrajectoryAnim} loop={true} />
+        </div>
+
+        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+          Trajectory Animation
+        </h3>
+        <RecoludeGrid />
+        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+          Background Grid Shader
+        </h3>
+        <ProjectStepper />
       </div>
     </div>
   );

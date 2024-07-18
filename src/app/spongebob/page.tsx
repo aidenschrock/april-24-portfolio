@@ -1,93 +1,74 @@
 "use client";
+import BackButton from "@/components/BackButton";
+import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
 import Link from "next/link";
 
 export default function Spongebob() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="w-full max-w-screen-md">
-        <Link href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-16 stroke-slate-300 pl-6 pt-6 hover:stroke-white  lg:w-20"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-            />
-          </svg>
-        </Link>
-      </div>
-      <div className="mx-6 mb-12 mt-10 max-w-screen-sm font-overpass">
+    <div className="mb-10 flex flex-col items-center justify-center">
+      <BackButton />
+      <div className="font-oxygen mb-12">
         <img
-          className="rounded"
+          className="h-auto w-full"
           alt="Bikini Bottom Fishmoji Factory"
-          src="fishmoji.webp"
+          src="fishmoji-share.webp"
         />
-        <div className="mt-10 flex flex-col items-center justify-center text-left">
-          <h2 className="w-full">
-            <b className="text-lg">agency:</b>{" "}
-            <a
-              className="text-rose-200 hover:text-white"
-              href="https://prettybigmonster.com/"
-              target="_blank"
-            >
-              Pretty Big Monster
-            </a>
+        <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
+          <div className="font-oxygenLight w-full px-2">
+            <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
+              <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+                <div className="h-16 w-8 rounded-tl-md bg-[#FFE200] lg:w-12" />
+                <div className="flex w-full pl-4">
+                  <h2 className="font-oxygenBold flex-1 px-2">Agency:</h2>
+                  <h3 className="flex-[2] pr-2">
+                    {" "}
+                    <a
+                      className="text-[#FE5008] hover:text-[#ff804a]"
+                      href="https://prettybigmonster.com/"
+                      target="_blank"
+                    >
+                      Pretty Big Monster
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+                <div className="h-20 w-8 bg-[#50B6E3]  lg:w-12" />
+                <div className="flex w-full pl-4">
+                  <h2 className="font-oxygenBold flex-1 px-2 font-bold">
+                    Services:
+                  </h2>
+                  <h3 className="flex-[2] pr-2">development</h3>
+                </div>
+              </div>
+              <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
+                <div className="h-16 w-8 rounded-bl-md bg-[#FE5008] lg:w-12" />
+                <div className="flex w-full pl-4">
+                  <h2 className="font-oxygenBold flex-1 px-2 font-bold ">
+                    Tools:
+                  </h2>
+                  <h3 className="flex-[2] pr-2">Next.js, GSAP, Tailwind</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img className="mt-20 w-full" src="fishmoji-ipad.webp" />
+          <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+            iPad mock for home and character creator views
+          </h3>
+          <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
+            About
           </h2>
-          <h2 className="w-full">
-            <b className="text-lg">client:</b> Nickelodeon/Paramount
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">services: </b>
-            development
-          </h2>
-          <h2 className="w-full">
-            <b className="text-lg">tools:</b> Next.js, GSAP, Tailwind
-          </h2>
-          <video
-            className="mt-10 rounded"
-            autoPlay
-            muted
-            loop
-            src="spongebob-home-loop.mov"
-          />
-          <a
-            href="https://spongebobfishmojifactory.com/"
-            target="_blank"
-            className="mt-12 flex w-full justify-center gap-4 rounded border-2 border-dotted border-[#872346] py-2 text-lg transition-colors hover:bg-[#872346]"
-          >
-            Live Link{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </a>
-          <h2 className="mt-12 w-full font-dirty text-2xl">About</h2>
-          <p>
+          <p className="font-oxygenLight max-w-sm px-4 sm:max-w-md lg:text-2xl">
             Spongebob Squarepants is an iconic children&#8217;s show- one that I
             myself grew up watching. The 25th anniversary of the show was this
             year(2024) and Nickelodeon wanted a special site to launch during
             the Kids Choice Awards.
           </p>
-          <p className="mt-4">
+          <p className="font-oxygenLight mt-4 max-w-sm px-4 sm:max-w-md lg:text-2xl">
             <a
-              className="text-rose-200 hover:text-white"
+              className="text-[#FE5008] hover:text-[#ff804a]"
               href="https://prettybigmonster.com/"
               target="_blank"
             >
@@ -99,11 +80,12 @@ export default function Spongebob() {
             features and outfits, and get a fishy name. Export your fish to
             share with your friends!
           </p>
-          <img
-            className="mt-10 rounded"
-            alt="fish customizing screenshot"
-            src="spongebob-maker.webp"
-          />
+          <img className="mt-20 w-full" src="kids-choice.webp" />
+          <img className="w-full" src="kids-choice-ad.webp" />
+          <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+            Kids Choice Awards Promotion
+          </h3>
+          <LiveButton link={"https://spongebobfishmojifactory.com/"} />
           <ProjectStepper />
         </div>
       </div>

@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         overpass: ["var(--font-overpass)"],
         dirty: ["var(--font-dirty)"],
+        oxygenLight: ["var(--font-oxygen-light)"],
+        oxygen: ["var(--font-oxygen)"],
+        oxygenBold: ["var(--font-oxygen-bold)"],
       },
     },
   },

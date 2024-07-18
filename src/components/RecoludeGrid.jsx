@@ -61,7 +61,7 @@ export default function RecoludeGrid() {
       <div
         ref={gridContainer}
         id="gridContainer"
-        className="h-64 w-full rounded bg-gradient-to-tr from-[#571732] to-[#140F27] md:h-96"
+        className="h-64 w-full bg-gradient-to-tr from-[#571732] to-[#140F27] md:h-[30rem] lg:h-[35rem] xl:h-[37rem] 2xl:h-[40rem]"
       >
         <Canvas camera={{ position: [0, 0.2, 0.2] }}>
           <Center>

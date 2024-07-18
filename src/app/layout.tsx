@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
-import { Overpass_Mono } from "next/font/google";
+import { Overpass_Mono, Oxygen } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 
 const overpass = Overpass_Mono({
   subsets: ["latin"],
   variable: "--font-overpass",
+});
+
+const oxygenLight = Oxygen({
+  subsets: ["latin"],
+  weight: "300",
+  variable: "--font-oxygen-light",
+});
+
+const oxygen = Oxygen({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-oxygen",
+});
+
+const oxygenBold = Oxygen({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-oxygen-bold",
 });
 
 const dirty = localFont({
@@ -27,7 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${overpass.variable} ${dirty.variable}`}>
+      <body
+        className={`${overpass.variable} ${oxygenLight.variable} ${oxygen.variable} ${oxygenBold.variable} ${dirty.variable}`}
+      >
         {children}
       </body>
     </html>
