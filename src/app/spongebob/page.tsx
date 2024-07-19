@@ -1,15 +1,52 @@
 "use client";
+
 import BackButton from "@/components/BackButton";
 import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
-import Link from "next/link";
+import { getImageProps } from "next/image";
 
 export default function Spongebob() {
+  const common = { alt: "Bikini Bottom Fishmoji Factory", sizes: "100vw" };
+  const {
+    props: { srcSet: desktopLarge },
+  } = getImageProps({
+    ...common,
+    width: 1440,
+    height: 875,
+    quality: 80,
+    src: "/fishmoji-share.webp",
+  });
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    width: 1440,
+    height: 875,
+    quality: 80,
+    src: "/fishmoji-share-2k.webp",
+  });
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    width: 750,
+    height: 1334,
+    quality: 70,
+    src: "/fishmoji-share-mobile.webp",
+  });
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
       <div className="font-oxygen mb-12">
         <picture>
+          <source media="(min-width: 2001px)" srcSet={desktopLarge} />
+          <source
+            media="(max-width: 2000px) and (min-width: 873px)"
+            srcSet={desktop}
+          />
+          <img {...rest} style={{ width: "100%", height: "auto" }} />
+        </picture>
+        {/* <picture className="w-full">
           <source srcSet="fishmoji-share.webp" media="(min-width: 2001px)" />
           <source
             srcSet="fishmoji-share-2k.webp"
@@ -19,7 +56,7 @@ export default function Spongebob() {
             src="fishmoji-share-mobile.webp"
             alt="Bikini Bottom Fishmoji Factory"
           />
-        </picture>
+        </picture> */}
         <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
           <div className="font-oxygenLight w-full px-2">
             <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
