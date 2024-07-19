@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function BackButton() {
   return (
-    <div className="fixed bottom-4 left-2 z-10 w-24 rounded-full mix-blend-difference backdrop-blur-sm hover:mix-blend-normal md:top-4 lg:bottom-auto lg:left-12 lg:top-12 lg:w-28 ">
+    <div className="fixed bottom-4 left-2 z-10 w-32 rounded-full mix-blend-difference backdrop-blur-sm hover:mix-blend-normal md:top-4 lg:bottom-auto lg:left-12 lg:top-12 lg:w-28 ">
       <Link href="/">
         <div className="rounded-full bg-white px-4 py-2 ">
           <svg
