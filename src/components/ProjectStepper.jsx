@@ -18,6 +18,7 @@ export default function ProjectStepper() {
   }
   return (
     <button
+      data-testid="next-project"
       className="font-oxygen project-button mt-12 flex w-11/12 max-w-2xl items-center justify-center gap-4 rounded border-2 border-dotted border-white py-2 text-lg transition-colors hover:bg-slate-200 hover:text-black lg:text-2xl xl:text-3xl"
       onClick={nextProject}
     >

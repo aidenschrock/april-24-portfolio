@@ -72,7 +72,7 @@ export default function Home() {
           <h2 className="text-center font-dirty text-3xl sm:text-4xl lg:text-5xl">
             Selected Work
           </h2>
-          <Link href="/spongebob">
+          <Link data-testid="spongebob" href="/spongebob">
             <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
