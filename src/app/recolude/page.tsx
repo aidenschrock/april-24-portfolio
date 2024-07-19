@@ -35,11 +35,17 @@ export default function Recolude() {
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
       <div className="relative w-full overflow-hidden">
-        <img
-          ref={recoludeHero}
-          className=" h-auto w-full"
-          src="recolude-mockup-2.webp"
-        />
+        <picture className="w-full">
+          <source srcSet="recolude-mockup.webp" media="(min-width: 2001px)" />
+          <source
+            srcSet="recolude-mockup-2k.webp"
+            media="(max-width: 2000px) and (min-width: 873px)"
+          />
+          <img
+            src="recolude-mockup-mobile.webp"
+            alt="Mockups of the Recolude homepage"
+          />
+        </picture>
       </div>
       <div className="mb-12 mt-10 flex w-full flex-col items-center justify-center">
         <div className="font-oxygenLight w-full px-2">
@@ -661,23 +667,31 @@ export default function Recolude() {
           <img
             className="mt-10 w-full lg:w-1/2"
             alt="comparison of old Recolude logo to new design"
-            src="logo-rebrand-2.webp"
+            src="logo-rebrand.webp"
           />
+
           <img
             className="mt-4 w-full lg:w-1/2"
             alt="Recolude logo mark variations"
-            src="recolude-square-2.webp"
+            src="recolude-square.webp"
           />
         </div>
 
         <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
           Updated Logo
         </h3>
-        <img
-          className="mt-10 w-full"
-          alt="a mockup showing various pages from the Recolude website"
-          src="RecoludeMock2024-2.webp"
-        />
+
+        <picture className="mt-10 w-full">
+          <source srcSet="RecoludeMock2024.webp" media="(min-width: 2001px)" />
+          <source
+            srcSet="RecoludeMock2024-2k.webp"
+            media="(max-width: 2000px) and (min-width: 873px)"
+          />
+          <img
+            src="RecoludeMock2024-1k.webp"
+            alt="a mockup showing various pages from the Recolude website"
+          />
+        </picture>
         <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
           Web Design
         </h3>

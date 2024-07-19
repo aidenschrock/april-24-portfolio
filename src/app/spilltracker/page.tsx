@@ -2,18 +2,17 @@
 import BackButton from "@/components/BackButton";
 import ProjectStepper from "@/components/ProjectStepper";
 import LiveButton from "@/components/LiveButton";
-import Link from "next/link";
 
 export default function Spilltracker() {
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
       <div className="font-oxygen mb-12">
-        <img
-          className="h-auto w-full"
-          alt="Spilltracker homepage"
-          src="spilltracker-home.webp"
-        />
+        <picture className="w-full">
+          <source srcSet="spilltracker-home.webp" media="(min-width: 2001px)" />
+
+          <img src="spilltracker-home-2k.webp" alt="Spilltracker homepage" />
+        </picture>
         <div className="mt-10 flex flex-col items-center justify-center text-left">
           <div className="font-oxygenLight w-full px-2">
             <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
@@ -45,11 +44,21 @@ export default function Spilltracker() {
             </div>
           </div>
 
-          <img
-            className="mt-20 h-auto w-full"
-            alt="Spilltracker mobile mockups"
-            src="spilltracker-mock-mobile.webp"
-          />
+          <picture className="mt-20 w-full">
+            <source
+              srcSet="spilltracker-mobile.webp"
+              media="(min-width: 2001px)"
+            />
+            <source
+              srcSet="spilltracker-mobile-2k.webp"
+              media="(max-width: 2000px) and (min-width: 1000px)"
+            />
+
+            <img
+              src="spilltracker-mobile-1k.webp"
+              alt="Spilltracker mobile mockups"
+            />
+          </picture>
           <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
             Spilltracker Mobile
           </h3>
