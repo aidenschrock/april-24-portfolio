@@ -6,57 +6,140 @@ import ProjectStepper from "@/components/ProjectStepper";
 import { getImageProps } from "next/image";
 
 export default function Spongebob() {
-  const common = { alt: "Bikini Bottom Fishmoji Factory", sizes: "100vw" };
+  const hero = { alt: "Bikini Bottom Fishmoji Factory", sizes: "100vw" };
   const {
-    props: { srcSet: desktopLarge },
+    props: { srcSet: desktopLargeHero },
   } = getImageProps({
-    ...common,
-    width: 1440,
-    height: 875,
-    quality: 80,
+    ...hero,
+    width: 6000,
+    height: 3918,
+    priority: true,
     src: "/fishmoji-share.webp",
   });
   const {
-    props: { srcSet: desktop },
+    props: { srcSet: desktopHero },
   } = getImageProps({
-    ...common,
-    width: 1440,
-    height: 875,
-    quality: 80,
+    ...hero,
+    width: 2000,
+    height: 1306,
+    priority: true,
     src: "/fishmoji-share-2k.webp",
   });
   const {
-    props: { srcSet: mobile, ...rest },
+    props: { srcSet: mobileHero, ...restHero },
   } = getImageProps({
-    ...common,
-    width: 750,
-    height: 1334,
-    quality: 70,
+    ...hero,
+    width: 1000,
+    height: 840,
+    priority: true,
     src: "/fishmoji-share-mobile.webp",
+  });
+
+  const ipad = {
+    alt: "iPad mockups for home and character creator views, both vertical and horizontal",
+    sizes: "100vw",
+  };
+  const {
+    props: { srcSet: desktopLargeIpad },
+  } = getImageProps({
+    ...ipad,
+    width: 6000,
+    height: 4122,
+
+    src: "/fishmoji-ipad.webp",
+  });
+  const {
+    props: { srcSet: desktopIpad },
+  } = getImageProps({
+    ...ipad,
+    width: 2000,
+    height: 1374,
+
+    src: "/fishmoji-ipad-2k.webp",
+  });
+  const {
+    props: { srcSet: mobileIpad, ...restIpad },
+  } = getImageProps({
+    ...ipad,
+    width: 912,
+    height: 1000,
+
+    src: "/fishmoji-ipad-mobile.webp",
+  });
+
+  const kidschoice = {
+    alt: "kids choice award hero promotion for the Bikini Bottom Fishmoji Factory",
+    sizes: "100vw",
+  };
+
+  const {
+    props: { srcSet: desktopLargeKidsChoice },
+  } = getImageProps({
+    ...kidschoice,
+    width: 5026,
+    height: 2134,
+
+    src: "/kids-choice.webp",
+  });
+  const {
+    props: { srcSet: desktopKidsChoice },
+  } = getImageProps({
+    ...kidschoice,
+    width: 2000,
+    height: 849,
+
+    src: "/kids-choice-2k.webp",
+  });
+  const {
+    props: { srcSet: mobileKidsChoice, ...restKidsChoice },
+  } = getImageProps({
+    ...kidschoice,
+    width: 872,
+    height: 1000,
+
+    src: "/kids-choice-mobile.webp",
+  });
+
+  const kidschoiceAd = {
+    alt: "kids choice award hero promotion for the Bikini Bottom Fishmoji Factory",
+    sizes: "100vw",
+  };
+  const {
+    props: { srcSet: desktopLargeKidsChoiceAd },
+  } = getImageProps({
+    ...kidschoiceAd,
+    width: 2938,
+    height: 1648,
+    src: "/kids-choice-ad.webp",
+  });
+  const {
+    props: { srcSet: desktopKidsChoiceAd },
+  } = getImageProps({
+    ...kidschoiceAd,
+    width: 2000,
+    height: 1122,
+    src: "/kids-choice-ad-2k.webp",
+  });
+  const {
+    props: { srcSet: mobileKidsChoiceAd, ...restKidsChoiceAd },
+  } = getImageProps({
+    ...kidschoiceAd,
+    width: 931,
+    height: 1000,
+    src: "/kids-choice-ad-mobile.webp",
   });
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
-      <div className="font-oxygen mb-12">
+      <div className="font-oxygen mb-12 w-full">
         <picture>
-          <source media="(min-width: 2001px)" srcSet={desktopLarge} />
+          <source media="(min-width: 2001px)" srcSet={desktopLargeHero} />
           <source
             media="(max-width: 2000px) and (min-width: 873px)"
-            srcSet={desktop}
+            srcSet={desktopHero}
           />
-          <img {...rest} style={{ width: "100%", height: "auto" }} />
+          <img {...restHero} style={{ width: "100%", height: "auto" }} />
         </picture>
-        {/* <picture className="w-full">
-          <source srcSet="fishmoji-share.webp" media="(min-width: 2001px)" />
-          <source
-            srcSet="fishmoji-share-2k.webp"
-            media="(max-width: 2000px) and (min-width: 873px)"
-          />
-          <img
-            src="fishmoji-share-mobile.webp"
-            alt="Bikini Bottom Fishmoji Factory"
-          />
-        </picture> */}
         <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
           <div className="font-oxygenLight w-full px-2">
             <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
@@ -98,16 +181,14 @@ export default function Spongebob() {
           </div>
 
           <picture className="mt-20 w-full">
-            <source srcSet="fishmoji-ipad.webp" media="(min-width: 2001px)" />
+            <source media="(min-width: 2001px)" srcSet={desktopLargeIpad} />
             <source
-              srcSet="fishmoji-ipad-2k.webp"
-              media="(max-width: 2000px) and (min-width: 1000px)"
+              media="(max-width: 2000px) and (min-width: 873px)"
+              srcSet={desktopIpad}
             />
-            <img
-              src="fishmoji-ipad-mobile.webp"
-              alt="iPad mockups for home and character creator views, both vertical and horizontal"
-            />
+            <img {...restIpad} style={{ width: "100%", height: "auto" }} />
           </picture>
+
           <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
             iPad mock for home and character creator views
           </h3>
@@ -136,26 +217,32 @@ export default function Spongebob() {
           </p>
 
           <picture className="mt-20 w-full">
-            <source srcSet="kids-choice.webp" media="(min-width: 2001px)" />
             <source
-              srcSet="kids-choice-2k.webp"
+              media="(min-width: 2001px)"
+              srcSet={desktopLargeKidsChoice}
+            />
+            <source
               media="(max-width: 2000px) and (min-width: 873px)"
+              srcSet={desktopKidsChoice}
             />
             <img
-              src="kids-choice-mobile.webp"
-              alt="kids choice award hero promotion for the Bikini Bottom Fishmoji Factory"
+              {...restKidsChoice}
+              style={{ width: "100%", height: "auto" }}
             />
           </picture>
 
           <picture className="w-full">
-            <source srcSet="kids-choice-ad.webp" media="(min-width: 2001px)" />
             <source
-              srcSet="kids-choice-ad-2k.webp"
+              media="(min-width: 2001px)"
+              srcSet={desktopLargeKidsChoiceAd}
+            />
+            <source
               media="(max-width: 2000px) and (min-width: 873px)"
+              srcSet={desktopKidsChoiceAd}
             />
             <img
-              src="kids-choice-ad-mobile.webp"
-              alt="integrated advertisement for the Bikini Bottom Fishmoji Factory"
+              {...restKidsChoiceAd}
+              style={{ width: "100%", height: "auto" }}
             />
           </picture>
           <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
