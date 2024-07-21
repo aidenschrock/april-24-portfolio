@@ -2,8 +2,11 @@
 import BackButton from "@/components/BackButton";
 import ProjectStepper from "@/components/ProjectStepper";
 import LiveButton from "@/components/LiveButton";
+import { useLenis } from "@studio-freight/react-lenis";
 
 export default function Spilltracker() {
+  const lenis = useLenis(({ scroll }) => {});
+  lenis?.scrollTo(0, { immediate: true, force: true });
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />

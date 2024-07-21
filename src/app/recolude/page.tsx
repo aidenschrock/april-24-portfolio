@@ -9,8 +9,12 @@ import BackButton from "@/components/BackButton";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useLenis } from "@studio-freight/react-lenis";
 
 export default function Recolude() {
+  const lenis = useLenis(({ scroll }) => {});
+  lenis?.scrollTo(0, { immediate: true, force: true });
+
   gsap.registerPlugin(useGSAP);
   const recoludeHero = useRef(null);
 

@@ -2,9 +2,12 @@
 import BackButton from "@/components/BackButton";
 import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
-import Link from "next/link";
+import { useLenis } from "@studio-freight/react-lenis";
 
 export default function Spongebob() {
+  const lenis = useLenis(({ scroll }) => {});
+  lenis?.scrollTo(0, { immediate: true, force: true });
+
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
