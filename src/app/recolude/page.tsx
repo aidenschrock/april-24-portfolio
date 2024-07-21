@@ -36,14 +36,23 @@ export default function Recolude() {
       <BackButton />
       <div className="relative w-full overflow-hidden">
         <picture className="w-full">
-          <source srcSet="recolude-mockup.webp" media="(min-width: 2001px)" />
+          <source
+            srcSet="recolude-mockup.webp"
+            media="(min-width: 2001px)"
+            width="6000px"
+            height="3394px"
+          />
           <source
             srcSet="recolude-mockup-2k.webp"
             media="(max-width: 2000px) and (min-width: 873px)"
+            width="2000px"
+            height="1131px"
           />
           <img
             src="recolude-mockup-mobile.webp"
             alt="Mockups of the Recolude homepage"
+            width="1000px"
+            height="895px"
           />
         </picture>
       </div>
@@ -668,28 +677,39 @@ export default function Recolude() {
             className="mt-10 w-full lg:w-1/2"
             alt="comparison of old Recolude logo to new design"
             src="logo-rebrand.webp"
+            width="2199px"
+            height="1000px"
           />
 
           <img
             className="mt-4 w-full lg:w-1/2"
             alt="Recolude logo mark variations"
             src="recolude-square.webp"
+            width="3000px"
+            height="3000px"
           />
         </div>
-
         <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
           Updated Logo
         </h3>
-
         <picture className="mt-10 w-full">
-          <source srcSet="RecoludeMock2024.webp" media="(min-width: 2001px)" />
+          <source
+            srcSet="RecoludeMock2024.webp"
+            media="(min-width: 2001px)"
+            width="6000px"
+            height="3000px"
+          />
           <source
             srcSet="RecoludeMock2024-2k.webp"
             media="(max-width: 2000px) and (min-width: 873px)"
+            width="2000px"
+            height="1000px"
           />
           <img
             src="RecoludeMock2024-1k.webp"
             alt="a mockup showing various pages from the Recolude website"
+            width="1000px"
+            height="500px"
           />
         </picture>
         <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
@@ -701,7 +721,6 @@ export default function Recolude() {
         <div className=" lg:hidden">
           <Lottie animationData={mobileTrajectoryAnim} loop={true} />
         </div>
-
         <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
           Trajectory Animation
         </h3>

@@ -9,9 +9,18 @@ export default function Spilltracker() {
       <BackButton />
       <div className="font-oxygen mb-12">
         <picture className="w-full">
-          <source srcSet="spilltracker-home.webp" media="(min-width: 2001px)" />
-
-          <img src="spilltracker-home-2k.webp" alt="Spilltracker homepage" />
+          <source
+            srcSet="spilltracker-home.webp"
+            media="(min-width: 2001px)"
+            width="6000px"
+            height="2310px"
+          />
+          <img
+            src="spilltracker-home-2k.webp"
+            alt="Spilltracker homepage"
+            width="2000px"
+            height="1453px"
+          />
         </picture>
         <div className="mt-10 flex flex-col items-center justify-center text-left">
           <div className="font-oxygenLight w-full px-2">
@@ -48,15 +57,21 @@ export default function Spilltracker() {
             <source
               srcSet="spilltracker-mobile.webp"
               media="(min-width: 2001px)"
+              width="6000px"
+              height="4003px"
             />
             <source
               srcSet="spilltracker-mobile-2k.webp"
               media="(max-width: 2000px) and (min-width: 1000px)"
+              width="2000px"
+              height="1334px"
             />
 
             <img
               src="spilltracker-mobile-1k.webp"
               alt="Spilltracker mobile mockups"
+              width="1000px"
+              height="667px"
             />
           </picture>
           <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">

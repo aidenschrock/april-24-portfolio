@@ -14,19 +14,19 @@ export default function Spongebob() {
             srcSet="fishmoji-share.webp"
             media="(min-width: 2001px)"
             width="6000px"
-            height="3918"
+            height="3918px"
           />
           <source
             srcSet="fishmoji-share-2k.webp"
             media="(max-width: 2000px) and (min-width: 873px)"
             width="2000px"
-            height="1306"
+            height="1306px"
           />
           <img
             src="fishmoji-share-mobile.webp"
             alt="Bikini Bottom Fishmoji Factory"
             width="1000px"
-            height="840"
+            height="840px"
           />
         </picture>
         <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
@@ -70,14 +70,23 @@ export default function Spongebob() {
           </div>
 
           <picture className="mt-20 w-full">
-            <source srcSet="fishmoji-ipad.webp" media="(min-width: 2001px)" />
+            <source
+              srcSet="fishmoji-ipad.webp"
+              media="(min-width: 2001px)"
+              width="6000px"
+              height="4122px"
+            />
             <source
               srcSet="fishmoji-ipad-2k.webp"
               media="(max-width: 2000px) and (min-width: 1000px)"
+              width="2000px"
+              height="1374px"
             />
             <img
               src="fishmoji-ipad-mobile.webp"
               alt="iPad mockups for home and character creator views, both vertical and horizontal"
+              width="912px"
+              height="1000px"
             />
           </picture>
           <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
@@ -108,26 +117,43 @@ export default function Spongebob() {
           </p>
 
           <picture className="mt-20 w-full">
-            <source srcSet="kids-choice.webp" media="(min-width: 2001px)" />
+            <source
+              srcSet="kids-choice.webp"
+              media="(min-width: 2001px)"
+              width="5026px"
+              height="2134px"
+            />
             <source
               srcSet="kids-choice-2k.webp"
               media="(max-width: 2000px) and (min-width: 873px)"
+              width="2000px"
+              height="849px"
             />
             <img
               src="kids-choice-mobile.webp"
               alt="kids choice award hero promotion for the Bikini Bottom Fishmoji Factory"
+              width="872px"
+              height="1000px"
             />
           </picture>
-
           <picture className="w-full">
-            <source srcSet="kids-choice-ad.webp" media="(min-width: 2001px)" />
+            <source
+              srcSet="kids-choice-ad.webp"
+              media="(min-width: 2001px)"
+              width="2938px"
+              height="1648px"
+            />
             <source
               srcSet="kids-choice-ad-2k.webp"
               media="(max-width: 2000px) and (min-width: 873px)"
+              width="2000px"
+              height="1122px"
             />
             <img
               src="kids-choice-ad-mobile.webp"
               alt="integrated advertisement for the Bikini Bottom Fishmoji Factory"
+              width="931px"
+              height="1000px"
             />
           </picture>
           <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
