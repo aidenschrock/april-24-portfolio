@@ -9,7 +9,7 @@ export default function Spongebob() {
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
       <div className="font-oxygen mb-12">
-        <picture>
+        <picture className="aspect-[25/21] w-full lg:aspect-[500/263]">
           <source srcSet="fishmoji-share.webp" media="(min-width: 2001px)" />
           <source
             srcSet="fishmoji-share-2k.webp"
