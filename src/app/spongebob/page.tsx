@@ -3,6 +3,7 @@ import BackButton from "@/components/BackButton";
 import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
 import { useLenis } from "@studio-freight/react-lenis";
+import Image from "next/image";
 
 export default function Spongebob() {
   const lenis = useLenis(({ scroll }) => {});
@@ -11,34 +12,30 @@ export default function Spongebob() {
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
-      <div className="font-oxygen mb-12">
-        <picture className="w-full">
-          <source
-            srcSet="fishmoji-share.webp"
-            media="(min-width: 2001px)"
-            width="6000px"
-            height="3918px"
-          />
-          <source
-            srcSet="fishmoji-share-2k.webp"
-            media="(max-width: 2000px) and (min-width: 873px)"
-            width="2000px"
-            height="1306px"
-          />
-          <img
-            src="fishmoji-share-mobile.webp"
-            alt="Bikini Bottom Fishmoji Factory"
-            width="1000px"
-            height="840px"
-          />
-        </picture>
+      <div className="mb-12 font-oxygen">
+        <Image
+          alt="Bikini Bottom Fishmoji Factory"
+          src="fishmoji-share.webp"
+          width={6000}
+          height={3918}
+          sizes="100vw"
+          className="hidden md:flex"
+        />
+        <Image
+          alt="Bikini Bottom Fishmoji Factory"
+          src="fishmoji-share-mobile.webp"
+          width={1000}
+          height={840}
+          sizes="100vw"
+          className="flex md:hidden"
+        />
         <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
-          <div className="font-oxygenLight w-full px-2">
+          <div className="w-full px-2 font-oxygenLight">
             <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
               <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
                 <div className="h-16 w-8 rounded-tl-md bg-[#FFE200] lg:w-12" />
                 <div className="flex w-full pl-4">
-                  <h2 className="font-oxygenBold flex-1 px-2">Agency:</h2>
+                  <h2 className="flex-1 px-2 font-oxygenBold">Agency:</h2>
                   <h3 className="flex-[2] pr-2">
                     {" "}
                     <a
@@ -54,7 +51,7 @@ export default function Spongebob() {
               <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
                 <div className="h-20 w-8 bg-[#50B6E3]  lg:w-12" />
                 <div className="flex w-full pl-4">
-                  <h2 className="font-oxygenBold flex-1 px-2 font-bold">
+                  <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                     Services:
                   </h2>
                   <h3 className="flex-[2] pr-2">development</h3>
@@ -63,7 +60,7 @@ export default function Spongebob() {
               <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
                 <div className="h-16 w-8 rounded-bl-md bg-[#FE5008] lg:w-12" />
                 <div className="flex w-full pl-4">
-                  <h2 className="font-oxygenBold flex-1 px-2 font-bold ">
+                  <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                     Tools:
                   </h2>
                   <h3 className="flex-[2] pr-2">Next.js, GSAP, Tailwind</h3>
@@ -71,40 +68,35 @@ export default function Spongebob() {
               </div>
             </div>
           </div>
-
-          <picture className="mt-20 w-full">
-            <source
-              srcSet="fishmoji-ipad.webp"
-              media="(min-width: 2001px)"
-              width="6000px"
-              height="4122px"
-            />
-            <source
-              srcSet="fishmoji-ipad-2k.webp"
-              media="(max-width: 2000px) and (min-width: 1000px)"
-              width="2000px"
-              height="1374px"
-            />
-            <img
-              src="fishmoji-ipad-mobile.webp"
-              alt="iPad mockups for home and character creator views, both vertical and horizontal"
-              width="912px"
-              height="1000px"
-            />
-          </picture>
-          <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+          <Image
+            alt="iPad mockups for home and character creator views, both vertical and horizontal"
+            src="fishmoji-ipad.webp"
+            width={6000}
+            height={4122}
+            sizes="100vw"
+            className="mt-20 hidden w-full md:flex"
+          />
+          <Image
+            alt="iPad mockups for home and character creator views, both vertical and horizontal"
+            src="fishmoji-ipad-mobile.webp"
+            width={912}
+            height={1000}
+            sizes="100vw"
+            className="mt-20 flex w-full md:hidden"
+          />
+          <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
             iPad mock for home and character creator views
           </h3>
           <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
             About
           </h2>
-          <p className="font-oxygenLight max-w-sm px-4 sm:max-w-md lg:text-2xl">
+          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
             Spongebob Squarepants is an iconic children&#8217;s show- one that I
             myself grew up watching. The 25th anniversary of the show was this
             year(2024) and Nickelodeon wanted a special site to launch during
             the Kids Choice Awards.
           </p>
-          <p className="font-oxygenLight mt-4 max-w-sm px-4 sm:max-w-md lg:text-2xl">
+          <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
             <a
               className="text-[#FE5008] hover:text-[#ff804a]"
               href="https://prettybigmonster.com/"
@@ -119,47 +111,40 @@ export default function Spongebob() {
             share with your friends!
           </p>
 
-          <picture className="mt-20 w-full">
-            <source
-              srcSet="kids-choice.webp"
-              media="(min-width: 2001px)"
-              width="5026px"
-              height="2134px"
-            />
-            <source
-              srcSet="kids-choice-2k.webp"
-              media="(max-width: 2000px) and (min-width: 873px)"
-              width="2000px"
-              height="849px"
-            />
-            <img
-              src="kids-choice-mobile.webp"
-              alt="kids choice award hero promotion for the Bikini Bottom Fishmoji Factory"
-              width="872px"
-              height="1000px"
-            />
-          </picture>
-          <picture className="w-full">
-            <source
-              srcSet="kids-choice-ad.webp"
-              media="(min-width: 2001px)"
-              width="2938px"
-              height="1648px"
-            />
-            <source
-              srcSet="kids-choice-ad-2k.webp"
-              media="(max-width: 2000px) and (min-width: 873px)"
-              width="2000px"
-              height="1122px"
-            />
-            <img
-              src="kids-choice-ad-mobile.webp"
-              alt="integrated advertisement for the Bikini Bottom Fishmoji Factory"
-              width="931px"
-              height="1000px"
-            />
-          </picture>
-          <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+          <Image
+            alt="kids choice award hero promotion for the Bikini Bottom Fishmoji Factory"
+            src="kids-choice.webp"
+            width={5026}
+            height={2134}
+            sizes="100vw"
+            className="mt-20 hidden w-full md:flex"
+          />
+          <Image
+            alt="kids choice award hero promotion for the Bikini Bottom Fishmoji Factory"
+            src="kids-choice-mobile.webp"
+            width={872}
+            height={1000}
+            sizes="100vw"
+            className="mt-20 flex w-full md:hidden"
+          />
+
+          <Image
+            alt="integrated advertisement for the Bikini Bottom Fishmoji Factory"
+            src="kids-choice-ad.webp"
+            width={2938}
+            height={1648}
+            sizes="100vw"
+            className="hidden w-full md:flex"
+          />
+          <Image
+            alt="integrated advertisement for the Bikini Bottom Fishmoji Factory"
+            src="kids-choice-ad-mobile.webp"
+            width={931}
+            height={1000}
+            sizes="100vw"
+            className="flex w-full md:hidden"
+          />
+          <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
             Kids Choice Awards Promotion
           </h3>
           <LiveButton link={"https://spongebobfishmojifactory.com/"} />

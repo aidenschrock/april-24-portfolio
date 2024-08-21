@@ -10,6 +10,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useLenis } from "@studio-freight/react-lenis";
+import Image from "next/image";
 
 export default function Recolude() {
   const lenis = useLenis(({ scroll }) => {});
@@ -39,41 +40,37 @@ export default function Recolude() {
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
       <div className="relative w-full overflow-hidden">
-        <picture className="w-full">
-          <source
-            srcSet="recolude-mockup.webp"
-            media="(min-width: 2001px)"
-            width="6000px"
-            height="3394px"
-          />
-          <source
-            srcSet="recolude-mockup-2k.webp"
-            media="(max-width: 2000px) and (min-width: 873px)"
-            width="2000px"
-            height="1131px"
-          />
-          <img
-            src="recolude-mockup-mobile.webp"
-            alt="Mockups of the Recolude homepage"
-            width="1000px"
-            height="895px"
-          />
-        </picture>
+        <Image
+          alt="Mockups of the Recolude homepage"
+          src="recolude-mockup.webp"
+          width={6000}
+          height={3394}
+          sizes="100vw"
+          className="hidden w-full md:flex"
+        />
+        <Image
+          alt="Mockups of the Recolude homepage"
+          src="recolude-mockup-mobile.webp"
+          width={1000}
+          height={895}
+          sizes="100vw"
+          className="flex w-full md:hidden"
+        />
       </div>
       <div className="mb-12 mt-10 flex w-full flex-col items-center justify-center">
-        <div className="font-oxygenLight w-full px-2">
+        <div className="w-full px-2 font-oxygenLight">
           <div className="mt-10 flex flex-col items-center justify-center text-left">
             <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
               <div className="h-16 w-8 rounded-tl-md bg-[#5B1934] lg:w-12" />
               <div className="flex w-full pl-4">
-                <h2 className="font-oxygenBold flex-1 px-2">Client:</h2>
+                <h2 className="flex-1 px-2 font-oxygenBold">Client:</h2>
                 <h3 className="flex-[2] pr-2">Recolude</h3>
               </div>
             </div>
             <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
               <div className="h-20 w-8 bg-[#26142C]  lg:w-12" />
               <div className="flex w-full pl-4">
-                <h2 className="font-oxygenBold flex-1 px-2 font-bold">
+                <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                   Services:
                 </h2>
                 <h3 className="flex-[2] pr-2">
@@ -84,7 +81,7 @@ export default function Recolude() {
             <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
               <div className="h-16 w-8 rounded-bl-md bg-[#21213E] lg:w-12" />
               <div className="flex w-full pl-4">
-                <h2 className="font-oxygenBold flex-1 px-2 font-bold ">
+                <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                   Tools:
                 </h2>
                 <h3 className="flex-[2] pr-2">Svelte, Three.js, Tailwind</h3>
@@ -668,55 +665,54 @@ export default function Recolude() {
         <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
           About
         </h2>
-        <p className="font-oxygenLight max-w-sm px-4 sm:max-w-md lg:text-2xl">
+        <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
           Recolude is the platform-agnostic solution for 3D spatial analytics &
           recording for XR, Research, Gaming, and Mocap projects.
         </p>
-        <p className="font-oxygenLight mt-4 max-w-sm px-4 sm:max-w-md lg:text-2xl">
+        <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
           The goal of our collaboration was to improve their brand design and
           give them a sleek new website.
         </p>
         <div className="flex w-full flex-col items-center justify-center lg:mt-24 lg:flex-row lg:flex-wrap">
-          <img
-            className="mt-10 w-full lg:w-1/2"
+          <Image
             alt="comparison of old Recolude logo to new design"
             src="logo-rebrand.webp"
-            width="2199px"
-            height="1000px"
+            width={2199}
+            height={1000}
+            sizes="100vw, 50vw"
+            className="mt-10 hidden w-full md:flex lg:w-1/2"
           />
 
-          <img
-            className="mt-4 w-full lg:w-1/2"
+          <Image
             alt="Recolude logo mark variations"
             src="recolude-square.webp"
-            width="3000px"
-            height="3000px"
+            width={3000}
+            height={3000}
+            sizes="100vw, 50vw"
+            className="mt-10 hidden w-full md:flex lg:w-1/2"
           />
         </div>
-        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
           Updated Logo
         </h3>
-        <picture className="mt-10 w-full">
-          <source
-            srcSet="RecoludeMock2024.webp"
-            media="(min-width: 2001px)"
-            width="6000px"
-            height="3000px"
-          />
-          <source
-            srcSet="RecoludeMock2024-2k.webp"
-            media="(max-width: 2000px) and (min-width: 873px)"
-            width="2000px"
-            height="1000px"
-          />
-          <img
-            src="RecoludeMock2024-1k.webp"
-            alt="a mockup showing various pages from the Recolude website"
-            width="1000px"
-            height="500px"
-          />
-        </picture>
-        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+        <Image
+          alt="a mockup showing various pages from the Recolude website"
+          src="RecoludeMock2024.webp"
+          width={6000}
+          height={3000}
+          sizes="100vw"
+          className="mt-10 hidden w-full md:flex"
+        />
+        <Image
+          alt="a mockup showing various pages from the Recolude website"
+          src="recolude-mockup-mobile.webp"
+          width={1000}
+          height={500}
+          sizes="100vw"
+          className="mt-10 flex w-full md:hidden"
+        />
+
+        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
           Web Design
         </h3>
         <div className="hidden lg:block">
@@ -725,11 +721,11 @@ export default function Recolude() {
         <div className=" lg:hidden">
           <Lottie animationData={mobileTrajectoryAnim} loop={true} />
         </div>
-        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
           Trajectory Animation
         </h3>
         <RecoludeGrid />
-        <h3 className="font-oxygenLight mb-8 mt-2 w-full pl-4 lg:pl-16 lg:text-xl">
+        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
           Background Grid Shader
         </h3>
         <ProjectStepper />
