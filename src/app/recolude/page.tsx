@@ -662,14 +662,14 @@ export default function Recolude() {
             />
           </g>
         </svg>
-        <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
+        <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
           About
         </h2>
-        <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
+        <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
           Recolude is the platform-agnostic solution for 3D spatial analytics &
-          recording for XR, Research, Gaming, and Mocap projects.
+          recording for XR, Research, Gaming, and Mocap projects.
         </p>
-        <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
+        <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
           The goal of our collaboration was to improve their brand design and
           give them a sleek new website.
         </p>

@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <ReactLenis root options={{ duration: 0.8 }}>
       <Navbar />
-      <main className="font-oxygen flex min-h-screen flex-col items-center justify-between">
+      <main className="flex min-h-screen flex-col items-center justify-between font-oxygen">
         <div
           id="home"
           className="flex h-screen w-full items-center justify-center "
@@ -72,6 +72,33 @@ export default function Home() {
           <h2 className="text-center font-dirty text-3xl sm:text-4xl lg:text-5xl">
             Selected Work
           </h2>
+          <Link href="/here">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+              <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+                <div className="flex flex-col gap-y-4 ">
+                  <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
+                    HERE
+                  </p>
+
+                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
+                    Development, Animation | Next.js, GSAP, Cesium, Google APIs
+                    | Agency: Pretty Big Monster
+                  </p>
+                </div>
+                <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
+                  <svg
+                    className="live-button-icon h-full w-full fill-white transition-transform"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 -960 960 960"
+                    width="24"
+                  >
+                    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </Link>
           <Link data-testid="spongebob" href="/spongebob">
             <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
@@ -126,7 +153,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/recolude">
-            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-y-2 border-white bg-slate-950/50 p-2 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
                 <div className="flex flex-col gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
@@ -151,7 +178,7 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <a
+          {/* <a
             href="https://watermelon-wine-three.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -180,7 +207,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </a>
+          </a> */}
         </div>
         <div
           className="flex w-full flex-col items-center gap-y-16"
@@ -228,7 +255,7 @@ export default function Home() {
             Let&#8217;s Work Together
           </h2>
 
-          <div className="font-oxygenBold flex flex-col items-end text-right text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+          <div className="flex flex-col items-end text-right font-oxygenBold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             <p id="email">AidenSchrock3D@gmail.com</p>
             <div className="mt-4 flex gap-x-4">
               <div

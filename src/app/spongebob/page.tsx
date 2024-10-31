@@ -87,16 +87,16 @@ export default function Spongebob() {
           <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
             iPad mock for home and character creator views
           </h3>
-          <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
+          <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
             About
           </h2>
-          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
+          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
             Spongebob Squarepants is an iconic children&#8217;s show- one that I
             myself grew up watching. The 25th anniversary of the show was this
             year(2024) and Nickelodeon wanted a special site to launch during
             the Kids Choice Awards.
           </p>
-          <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
+          <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
             <a
               className="text-[#FE5008] hover:text-[#ff804a]"
               href="https://prettybigmonster.com/"

@@ -78,10 +78,10 @@ export default function Spilltracker() {
             Spilltracker Mobile
           </h3>
 
-          <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:text-4xl">
+          <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
             About
           </h2>
-          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:text-2xl">
+          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
             This project was for Beyond Petrochemicals, a project by the
             non-profit Resource Legacy Fund. Some of my favorite features on
             this page include the dynamic list of accidents, the sticky ticker,

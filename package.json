@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@mux/mux-player-react": "^3.1.0",
     "@react-spring/three": "^9.7.3",
     "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^9.105.2",

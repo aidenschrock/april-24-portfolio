@@ -37,9 +37,9 @@ function Ballpit() {
         Float32Array.from(
           new Array(count * 3)
             .fill()
-            .flatMap((_, i) => tempColor.set(colors[i]).toArray())
+            .flatMap((_, i) => tempColor.set(colors[i]).toArray()),
         ),
-      []
+      [],
     );
 
     const { viewport } = useThree();
@@ -90,8 +90,8 @@ function Ballpit() {
       api.position.set(
         (state.pointer.x * viewport.width) / 2,
         (state.pointer.y * viewport.height) / 2,
-        7
-      )
+        7,
+      ),
     );
   }
 
