@@ -1,3 +1,4 @@
+"use client";
 import BackButton from "@/components/BackButton";
 import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
