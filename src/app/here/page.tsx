@@ -107,7 +107,7 @@ export default function Here() {
           />
           <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
             Theater selection view in the HERE experience- created using Cesium
-            and Google's photorealistic map tiles.
+            and Google&#8217;s photorealistic map tiles.
           </h3>
           <div className="flex w-full flex-col items-center justify-center">
             <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
