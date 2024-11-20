@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Here() {
   return (
     <>
-      <div className="mb-10 flex flex-col items-center justify-center">
+      <div className="mb-10 flex flex-col items-center justify-center overflow-x-hidden">
         <BackButton />
         <div className="mb-12 font-oxygen">
           <MuxPlayer

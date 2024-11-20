@@ -6,6 +6,7 @@
 html {
   background-color: #000;
   color: white;
+  color-scheme: dark;
 }
 
 :root:has(.blockScroll) {
