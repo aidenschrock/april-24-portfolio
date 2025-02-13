@@ -7,7 +7,6 @@ const imgixLoader = ({
   width: number;
   quality: number;
 }) => {
-  console.log(src);
   const url = new URL(`https://aidenschrock-642894279.imgix.net/${src}`);
   const params = url.searchParams;
   params.set("auto", params.getAll("auto").join(",") || "format");
