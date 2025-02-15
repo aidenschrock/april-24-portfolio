@@ -147,7 +147,7 @@ export default function Spongebob() {
           <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
             Kids Choice Awards Promotion
           </h3>
-          <LiveButton link={"https://spongebobfishmojifactory.com/"} />
+          <LiveButton link={"https://spongebob-fishmoji-maker.vercel.app/"} />
           <ProjectStepper />
         </div>
       </div>
