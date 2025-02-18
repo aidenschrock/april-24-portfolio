@@ -53,17 +53,15 @@ export default function MaryLimPortfolio() {
                 design style that mimics stationary. In this project, I was both
                 the designer and developer. Here are the touches that I love
                 most:
-                <ul className="list-disc space-y-2 pl-8 pt-6">
-                  <li>
-                    Illustrative stamps based on the real weather in Austin
-                  </li>
-                  <li>A marquee in the nav that mimics Washi tape</li>
-                  <li>Handwritten typography</li>
-                  <li>
-                    Stickers to showcase the tools that Mary is proficient in{" "}
-                  </li>
-                </ul>
               </p>
+              <ul className="list-disc space-y-2 pl-8 pt-6">
+                <li>Illustrative stamps based on the real weather in Austin</li>
+                <li>A marquee in the nav that mimics Washi tape</li>
+                <li>Handwritten typography</li>
+                <li>
+                  Stickers to showcase the tools that Mary is proficient in{" "}
+                </li>
+              </ul>
             </div>
             <Image
               alt="A mobile mockup of Mary's portfolio."
