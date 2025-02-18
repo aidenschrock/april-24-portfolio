@@ -64,7 +64,7 @@ export default function Recolude() {
               <div className="h-16 w-8 rounded-tl-md bg-[#5B1934] lg:w-12" />
               <div className="flex w-full pl-4">
                 <h2 className="flex-1 px-2 font-oxygenBold">Client:</h2>
-                <h3 className="flex-[2] pr-2">Recolude</h3>
+                <h3 className="flex-[3] pr-2">Recolude</h3>
               </div>
             </div>
             <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
@@ -73,7 +73,7 @@ export default function Recolude() {
                 <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                   Services:
                 </h2>
-                <h3 className="flex-[2] pr-2">
+                <h3 className="flex-[3] pr-2">
                   branding, web design & development
                 </h3>
               </div>
@@ -84,7 +84,7 @@ export default function Recolude() {
                 <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                   Tools:
                 </h2>
-                <h3 className="flex-[2] pr-2">Svelte, Three.js, Tailwind</h3>
+                <h3 className="flex-[3] pr-2">Svelte, Three.js, Tailwind</h3>
               </div>
             </div>
           </div>

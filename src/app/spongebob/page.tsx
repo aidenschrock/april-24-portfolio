@@ -2,32 +2,21 @@
 import BackButton from "@/components/BackButton";
 import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
-import { useLenis } from "@studio-freight/react-lenis";
+import MuxPlayer from "@mux/mux-player-react";
 import Image from "next/image";
 
 export default function Spongebob() {
-  const lenis = useLenis(({ scroll }) => {});
-  lenis?.scrollTo(0, { immediate: true, force: true });
-
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
       <div className="mb-12 font-oxygen">
-        <Image
-          alt="Bikini Bottom Fishmoji Factory"
-          src="fishmoji-share.webp"
-          width={6000}
-          height={3918}
-          sizes="100vw"
-          className="hidden md:flex"
-        />
-        <Image
-          alt="Bikini Bottom Fishmoji Factory"
-          src="fishmoji-share-mobile.webp"
-          width={1000}
-          height={840}
-          sizes="100vw"
-          className="flex md:hidden"
+        <MuxPlayer
+          accent-color="#de316d"
+          streamType="on-demand"
+          playbackId="1GcFzww01RYwjxkvAplWVFadsOiKeVay4301PSqrr9Eyo"
+          metadataVideoTitle="Spongebob Fishmoji Factory Walkthrough"
+          primaryColor="#FFFFFF"
+          secondaryColor="#000000"
         />
         <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
           <div className="w-full px-2 font-oxygenLight">
@@ -36,7 +25,7 @@ export default function Spongebob() {
                 <div className="h-16 w-8 rounded-tl-md bg-[#FFE200] lg:w-12" />
                 <div className="flex w-full pl-4">
                   <h2 className="flex-1 px-2 font-oxygenBold">Agency:</h2>
-                  <h3 className="flex-[2] pr-2">
+                  <h3 className="flex-[3] pr-2">
                     {" "}
                     <a
                       className="text-[#FE5008] hover:text-[#ff804a]"
@@ -54,7 +43,7 @@ export default function Spongebob() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                     Services:
                   </h2>
-                  <h3 className="flex-[2] pr-2">development</h3>
+                  <h3 className="flex-[3] pr-2">development</h3>
                 </div>
               </div>
               <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
@@ -63,7 +52,7 @@ export default function Spongebob() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                     Tools:
                   </h2>
-                  <h3 className="flex-[2] pr-2">Next.js, GSAP, Tailwind</h3>
+                  <h3 className="flex-[3] pr-2">Next.js, GSAP, Tailwind</h3>
                 </div>
               </div>
             </div>

@@ -25,7 +25,7 @@ export default function Here() {
                 <div className="h-16 w-8 rounded-tl-md bg-[#35393A] lg:w-12" />
                 <div className="flex w-full pl-4">
                   <h2 className="flex-1 px-2 font-oxygenBold">Agency:</h2>
-                  <h3 className="flex-[2] pr-2">
+                  <h3 className="flex-[3] pr-2">
                     {" "}
                     <a
                       className="text-[#85a5c9] hover:text-[#b1c8e3]"
@@ -43,7 +43,7 @@ export default function Here() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                     Services:
                   </h2>
-                  <h3 className="flex-[2] pr-2">development, animation</h3>
+                  <h3 className="flex-[3] pr-2">development, animation</h3>
                 </div>
               </div>
               <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
@@ -52,7 +52,7 @@ export default function Here() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                     Tools:
                   </h2>
-                  <h3 className="flex-[2] pr-2">
+                  <h3 className="flex-[3] pr-2">
                     Next.js, GSAP, Cesium, Google APIs
                   </h3>
                 </div>

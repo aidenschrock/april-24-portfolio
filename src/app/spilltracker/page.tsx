@@ -35,7 +35,7 @@ export default function Spilltracker() {
                 <div className="h-16 w-8 rounded-tl-md bg-[#FEB92F] lg:w-12" />
                 <div className="flex w-full pl-4">
                   <h2 className="flex-1 px-2 font-oxygenBold">Agency:</h2>
-                  <h3 className="flex-[2] pr-2">Hunt, Gather</h3>
+                  <h3 className="flex-[3] pr-2">Hunt, Gather</h3>
                 </div>
               </div>
               <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
@@ -44,7 +44,7 @@ export default function Spilltracker() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                     Client:
                   </h2>
-                  <h3 className="flex-[2] pr-2">Resources Legacy Fund</h3>
+                  <h3 className="flex-[3] pr-2">Resources Legacy Fund</h3>
                 </div>
               </div>
               <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
@@ -53,7 +53,7 @@ export default function Spilltracker() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                     Tools:
                   </h2>
-                  <h3 className="flex-[2] pr-2">Webflow, GSAP, Cloudflare</h3>
+                  <h3 className="flex-[3] pr-2">Webflow, GSAP, Cloudflare</h3>
                 </div>
               </div>
             </div>

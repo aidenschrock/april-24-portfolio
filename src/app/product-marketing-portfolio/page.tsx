@@ -27,7 +27,7 @@ export default function MaryLimPortfolio() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold">
                     Services:
                   </h2>
-                  <h3 className="flex-[2] pr-2">
+                  <h3 className="flex-[3] pr-2">
                     design, development, animation
                   </h3>
                 </div>
@@ -38,7 +38,7 @@ export default function MaryLimPortfolio() {
                   <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
                     Tools:
                   </h2>
-                  <h3 className="flex-[2] pr-2">
+                  <h3 className="flex-[3] pr-2">
                     Next.js, Tailwind, Motion, Adobe Creative Suite
                   </h3>
                 </div>
