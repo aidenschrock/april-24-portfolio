@@ -1,3 +1,4 @@
+"use client";
 import BackButton from "@/components/BackButton";
 import LiveButton from "@/components/LiveButton";
 import ProjectStepper from "@/components/ProjectStepper";
@@ -48,7 +49,7 @@ export default function MaryLimPortfolio() {
                 About
               </h2>
               <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
-                Mary's portfolio was a perfect opportunity to try out a web
+                Mary&#39;s portfolio was a perfect opportunity to try out a web
                 design style that mimics stationary. In this project, I was both
                 the designer and developer. Here are the touches that I love
                 most:
@@ -73,7 +74,7 @@ export default function MaryLimPortfolio() {
               className="mt-20 w-full"
             />
             <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
-              A mobile mockup of Mary's portfolio.
+              A mobile mockup of Mary&#39;s portfolio.
             </h3>
           </div>
         </div>
