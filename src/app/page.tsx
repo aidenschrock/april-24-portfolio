@@ -300,7 +300,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Linkedin
+              LinkedIn
             </a>
           </div>
         </div>
