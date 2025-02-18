@@ -148,7 +148,7 @@ export default function Spongebob() {
             Kids Choice Awards Promotion
           </h3>
           <LiveButton link={"https://spongebob-fishmoji-maker.vercel.app/"} />
-          <ProjectStepper />
+          <ProjectStepper nextLink="/spilltracker" />
         </div>
       </div>
     </div>

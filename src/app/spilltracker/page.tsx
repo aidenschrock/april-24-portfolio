@@ -89,7 +89,7 @@ export default function Spilltracker() {
           </p>
           <LiveButton link={"https://www.spilltracker.org/"} />
 
-          <ProjectStepper />
+          <ProjectStepper nextLink="/recolude" />
         </div>
       </div>
     </div>

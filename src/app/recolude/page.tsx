@@ -728,7 +728,7 @@ export default function Recolude() {
         <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
           Background Grid Shader
         </h3>
-        <ProjectStepper />
+        <ProjectStepper nextLink="/product-marketing-portfolio" />
       </div>
     </div>
   );

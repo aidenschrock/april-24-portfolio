@@ -132,7 +132,7 @@ export default function Here() {
             </p>
             <LiveButton link={"https://maps.here-movie.com/"} />
 
-            <ProjectStepper />
+            <ProjectStepper nextLink="/spongebob" />
           </div>
         </div>
       </div>
