@@ -54,7 +54,7 @@ export default function MaryLimPortfolio() {
                 the designer and developer. Here are the touches that I love
                 most:
               </p>
-              <ul className="list-disc space-y-2 pl-8 pt-6">
+              <ul className="list-disc space-y-2 pl-8 pt-6 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
                 <li>Illustrative stamps based on the real weather in Austin</li>
                 <li>A marquee in the nav that mimics Washi tape</li>
                 <li>Handwritten typography</li>
