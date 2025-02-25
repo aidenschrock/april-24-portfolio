@@ -40,18 +40,18 @@ export default function Home() {
   return (
     <ReactLenis root options={{ duration: 0.8 }}>
       <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between font-oxygen">
+      <main className="font-zodiak flex min-h-screen flex-col items-center justify-between">
         <div
           id="home"
-          className="flex h-screen w-full items-center justify-center "
+          className="flex h-[80vh] w-full items-center justify-center md:h-screen "
         >
-          <h1 className="-mt-12 text-center font-dirty text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] xl:text-[13rem]">
+          <h1 className=" mt-16 text-center font-dirty text-7xl sm:text-8xl md:text-9xl lg:mt-6 lg:text-[11rem] xl:text-[13rem]">
             Creative <br /> Developer
           </h1>
         </div>
         <div
           id="about"
-          className="flex w-full flex-col justify-center gap-32 p-6 sm:p-14 lg:flex-row"
+          className="flex h-[90vh] w-full flex-col items-center justify-center gap-6 p-6 sm:p-14 md:h-[80vh] md:gap-32 lg:flex-row"
         >
           <div>
             <h2 className="font-dirty text-5xl sm:text-7xl md:text-8xl lg:text-9xl">
@@ -59,11 +59,11 @@ export default function Home() {
             </h2>
           </div>
 
-          <p className="max-w-3xl text-xl sm:text-2xl lg:w-1/2">
+          <p className="font-zodiak max-w-3xl bg-transparent text-xl font-light sm:text-2xl lg:max-w-lg lg:text-3xl">
             My name is Aiden, and I&#8217;m an independent creative developer
-            based in Austin, TX. My main tools are Three.js and GSAP, enabling
-            me to seamlessly blend captivating animations with the power of 3D
-            graphics. Let&#8217;s bring your ideas to life by creating websites
+            based in Austin, TX. I&#8217;m in love with the process of making
+            fun and unique web experiences. <br />
+            <br /> Let&#8217;s bring your ideas to life by creating websites
             that not only engage your audience but also leave a lasting
             impression!
           </p>
@@ -73,14 +73,14 @@ export default function Home() {
             Selected Work
           </h2>
           <Link href="/product-marketing-portfolio">
-            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 px-2 py-6 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-                <div className="flex flex-col gap-y-4 ">
+                <div className="flex flex-col gap-y-2 md:gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Mary Lim Product Marketing Portfolio
                   </p>
 
-                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className="font-oxygenLight  font-light lg:text-lg xl:text-xl">
                     Design, Development, Animation | Next.js, Motion, Tailwind,
                     Adobe Creative Suite
                   </p>
@@ -100,14 +100,14 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/here">
-            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 px-2 py-6 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-                <div className="flex flex-col gap-y-4 ">
+                <div className="flex flex-col gap-y-2 md:gap-y-4 ">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     HERE
                   </p>
 
-                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className="font-oxygenLight  lg:text-lg xl:text-xl">
                     Development, Animation | Next.js, GSAP, Cesium, Google APIs
                     | Agency: Pretty Big Monster
                   </p>
@@ -127,14 +127,14 @@ export default function Home() {
             </div>
           </Link>
           <Link data-testid="spongebob" href="/spongebob">
-            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 px-2 py-6 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-                <div className="flex flex-col gap-y-4 ">
+                <div className="flex flex-col gap-y-2 md:gap-y-4">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Spongebob Fishmoji Factory
                   </p>
 
-                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className="font-oxygenLight  lg:text-lg xl:text-xl">
                     Development | Next.js, GSAP, Tailwind | Agency: Pretty Big
                     Monster
                   </p>
@@ -154,14 +154,14 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/spilltracker">
-            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-t-2 border-white bg-slate-950/50 px-2 py-6 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-                <div className="flex flex-col gap-y-4 ">
+                <div className="flex flex-col gap-y-2 md:gap-y-4">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Spilltracker
                   </p>
 
-                  <p className="font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
+                  <p className="font-oxygenLight lg:text-lg xl:text-xl">
                     Development | GSAP, Cloudflare, Webflow | Agency Drop-in
                   </p>
                 </div>
@@ -180,9 +180,9 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/recolude">
-            <div className="project-button gap-y-4 border-y-2 border-white bg-slate-950/50 p-2 lg:p-6">
+            <div className="project-button gap-y-4 border-y-2 border-white bg-slate-950/50 px-2 py-6 lg:p-6">
               <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-                <div className="flex flex-col gap-y-4 ">
+                <div className="flex flex-col gap-y-2 md:gap-y-4">
                   <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
                     Recolude
                   </p>
@@ -205,45 +205,15 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          {/* <a
-            href="https://watermelon-wine-three.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="project-button gap-y-4 border-y-2 border-white bg-slate-950/50 p-2 lg:p-6">
-              <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-                <div className="flex flex-col gap-y-4 ">
-                  <p className="text-2xl font-bold sm:text-3xl  lg:text-4xl">
-                    Floating Models
-                  </p>
-
-                  <p className=" font-oxygenLight text-sm sm:text-base lg:text-lg xl:text-xl">
-                    Experimental | React Three Fiber
-                  </p>
-                </div>
-                <div className="mr-4 h-12 w-12 sm:mr-16 md:h-16 md:w-16">
-                  <svg
-                    className="live-button-icon h-full w-full fill-white transition-transform hover:-translate-y-2 hover:translate-x-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 -960 960 960"
-                    width="24"
-                  >
-                    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a> */}
         </div>
         <div
-          className="flex w-full flex-col items-center gap-y-16"
+          className="mt-6 flex w-full flex-col items-center gap-y-16"
           id="services"
         >
           <div className="flex  max-w-7xl flex-col-reverse lg:flex-row 2xl:max-h-96">
             <div className="p-6 text-right  lg:flex lg:flex-col lg:justify-center">
-              <h3 className="font-dirty text-4xl sm:text-5xl">Branding</h3>
-              <p className=" max-w-lg text-base  sm:text-2xl">
+              <h3 className="text-4xl font-semibold sm:text-5xl">Branding</h3>
+              <p className=" max-w-lg font-oxygen text-xl  sm:text-2xl">
                 Branding goes beyond logos and design, encompassing the entire
                 customer experience, company culture, and values. A strong brand
                 can lead to increased recognition and customer loyalty.
@@ -258,10 +228,10 @@ export default function Home() {
               <Ballpit />
             </div>
             <div className="p-6 lg:flex lg:flex-col lg:justify-center">
-              <h3 className="font-dirty text-4xl sm:text-5xl">
+              <h3 className="text-4xl font-semibold sm:text-5xl">
                 3D Design & Animation
               </h3>
-              <p className=" max-w-lg text-base sm:text-2xl">
+              <p className="max-w-lg font-oxygen text-xl font-normal sm:text-2xl">
                 Immersive elements enhance user engagement, boost visual appeal,
                 facilitate storytelling, and provide interactive product
                 showcases. They convey your brand&#8217;s personality, improve
@@ -276,20 +246,20 @@ export default function Home() {
         </div>
         <div
           id="contact"
-          className="mx-auto flex max-w-7xl flex-col gap-y-44  p-6 py-40"
+          className="mx-auto flex max-w-7xl flex-col gap-y-44  p-6 py-20 md:py-40"
         >
-          <h2 className=" flex font-dirty text-6xl sm:text-7xl lg:text-8xl">
+          <h2 className=" flex text-6xl font-bold sm:text-7xl lg:text-8xl">
             Let&#8217;s Work Together
           </h2>
 
-          <div className="flex flex-col items-end text-right font-oxygenBold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+          <div className="flex flex-col items-end text-right text-xl font-light sm:text-2xl md:text-3xl lg:text-4xl">
             <p id="email">AidenSchrock3D@gmail.com</p>
             <div className="mt-4 flex gap-x-4">
               <div
                 id="tooltip"
                 className={`${
                   tooltipVisibility ? "visible" : "invisible"
-                } relative mt-4 flex h-10 w-40 items-center justify-center rounded-md border-2 border-dotted border-pink-500 bg-slate-900/50`}
+                } border-primary relative mt-4 flex h-10 w-40 items-center justify-center rounded-md border-2 border-dotted bg-slate-900/50`}
               >
                 <span
                   id="tooltiptext"
@@ -302,7 +272,7 @@ export default function Home() {
               </div>
               <svg
                 onClick={copy}
-                className="h-auto w-12 fill-white hover:fill-pink-600 lg:w-16"
+                className="hover:fill-primary h-auto w-12 fill-white lg:w-16"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
                 width="24"
@@ -310,7 +280,7 @@ export default function Home() {
                 <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Z" />
               </svg>
               <svg
-                className="h-auto w-12 fill-white hover:fill-pink-600 lg:w-16"
+                className="hover:fill-primary h-auto w-12 fill-white lg:w-16"
                 onClick={sendEmail}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
@@ -322,12 +292,20 @@ export default function Home() {
           </div>
           <div className="socials flex gap-x-6 text-2xl sm:text-3xl lg:text-4xl ">
             <a
-              className="font-oxygenLight hover:text-pink-600"
+              className=" hover:text-primary"
               href="https://www.linkedin.com/in/aiden-schrock/"
               target="_blank"
               rel="noreferrer"
             >
               LinkedIn
+            </a>
+            <a
+              className=" hover:text-primary"
+              href="https://bsky.app/profile/aiden-schrock.bsky.social"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Bsky
             </a>
           </div>
         </div>

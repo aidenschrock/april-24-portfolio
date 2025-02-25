@@ -3,7 +3,7 @@ export default function LiveButton(props) {
     <a
       href={props.link}
       target="_blank"
-      className="font-oxygen project-button mt-12 flex w-11/12 max-w-2xl items-center justify-center gap-4 rounded border-2 border-dotted border-white py-2 text-lg transition-colors hover:bg-slate-200 hover:text-black lg:text-2xl xl:text-3xl"
+      className="font-zodiak project-button mt-12 flex w-11/12 max-w-2xl items-center justify-center gap-4 rounded border-2 border-dotted border-white py-2 text-lg transition-colors hover:bg-slate-200 hover:text-black lg:text-2xl xl:text-3xl"
     >
       Live Link
       <svg

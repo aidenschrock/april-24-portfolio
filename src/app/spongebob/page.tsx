@@ -18,14 +18,16 @@ export default function Spongebob() {
           primaryColor="#FFFFFF"
           secondaryColor="#000000"
         />
-        <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
-          <div className="w-full px-2 font-oxygenLight">
+        <div className="font-zodiak mt-10 flex w-full flex-col items-center justify-center text-left">
+          <div className="w-full ">
             <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
-              <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-                <div className="h-16 w-8 rounded-tl-md bg-[#FFE200] lg:w-12" />
-                <div className="flex w-full pl-4">
-                  <h2 className="flex-1 px-2 font-oxygenBold">Agency:</h2>
-                  <h3 className="flex-[3] pr-2">
+              <div className="flex w-full max-w-md items-center border-y-2 border-dotted border-neutral-500 md:rounded-t-md md:border-x-2 lg:max-w-2xl lg:text-2xl">
+                <div className="h-24 w-8 bg-[#FFE200] md:rounded-tl-md lg:h-32 lg:w-12" />
+                <div className="flex h-24 w-full lg:h-32">
+                  <h2 className="h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                    Agency
+                  </h2>
+                  <h3 className="flex h-full items-center justify-center px-4 font-oxygen text-xl  lg:text-2xl">
                     {" "}
                     <a
                       className="text-[#FE5008] hover:text-[#ff804a]"
@@ -37,22 +39,26 @@ export default function Spongebob() {
                   </h3>
                 </div>
               </div>
-              <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-                <div className="h-20 w-8 bg-[#50B6E3]  lg:w-12" />
-                <div className="flex w-full pl-4">
-                  <h2 className="flex-1 px-2 font-oxygenBold font-bold">
-                    Services:
+              <div className="flex w-full max-w-md items-center border-dotted border-neutral-500 md:border-x-2 lg:max-w-2xl lg:text-2xl">
+                <div className="h-24 w-8 bg-[#50B6E3] lg:h-32  lg:w-12" />
+                <div className="flex h-24 w-full lg:h-32">
+                  <h2 className="h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                    Services
                   </h2>
-                  <h3 className="flex-[3] pr-2">development</h3>
+                  <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
+                    development
+                  </h3>
                 </div>
               </div>
-              <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-                <div className="h-16 w-8 rounded-bl-md bg-[#FE5008] lg:w-12" />
-                <div className="flex w-full pl-4">
-                  <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
-                    Tools:
+              <div className="flex w-full max-w-md items-center border-y-2 border-dotted border-neutral-500 md:rounded-b-md md:border-x-2 lg:max-w-2xl lg:text-2xl">
+                <div className="h-24 w-8 bg-[#FE5008] md:rounded-bl-md lg:h-32 lg:w-12" />
+                <div className="flex h-24 w-full lg:h-32">
+                  <h2 className="h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                    Tools
                   </h2>
-                  <h3 className="flex-[3] pr-2">Next.js, GSAP, Tailwind</h3>
+                  <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
+                    Next.js, GSAP, Tailwind
+                  </h3>
                 </div>
               </div>
             </div>
@@ -73,19 +79,19 @@ export default function Spongebob() {
             sizes="100vw"
             className="mt-20 flex w-full md:hidden"
           />
-          <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+          <h3 className="font-zodiak mb-8 mt-2 w-full px-4 font-light lg:pl-16 lg:text-xl">
             iPad mock for home and character creator views
           </h3>
-          <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
+          <h2 className="mt-20 w-full max-w-sm px-4 font-dirty text-3xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
             About
           </h2>
-          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
+          <p className="font-zodiak max-w-sm text-pretty px-4 text-lg font-light sm:max-w-md lg:max-w-2xl lg:text-2xl">
             Spongebob Squarepants is an iconic children&#8217;s show- one that I
             myself grew up watching. The 25th anniversary of the show was this
             year(2024) and Nickelodeon wanted a special site to launch during
             the Kids Choice Awards.
           </p>
-          <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
+          <p className="font-zodiak mt-4 max-w-sm text-pretty px-4 text-lg font-light sm:max-w-md lg:max-w-2xl lg:text-2xl">
             <a
               className="text-[#FE5008] hover:text-[#ff804a]"
               href="https://prettybigmonster.com/"
@@ -133,7 +139,7 @@ export default function Spongebob() {
             sizes="100vw"
             className="flex w-full md:hidden"
           />
-          <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+          <h3 className="font-zodiak mb-8 mt-2 w-full pl-4 font-light lg:pl-16 lg:text-xl">
             Kids Choice Awards Promotion
           </h3>
           <LiveButton link={"https://spongebob-fishmoji-maker.vercel.app/"} />

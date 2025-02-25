@@ -6,36 +6,9 @@ import desktopTrajectoryAnim from "../../lib/trajectory-anim/desktop.json";
 import RecoludeGrid from "@/components/RecoludeGrid";
 import ProjectStepper from "@/components/ProjectStepper";
 import BackButton from "@/components/BackButton";
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useLenis } from "@studio-freight/react-lenis";
 import Image from "next/image";
 
 export default function Recolude() {
-  const lenis = useLenis(({ scroll }) => {});
-  lenis?.scrollTo(0, { immediate: true, force: true });
-
-  gsap.registerPlugin(useGSAP);
-  const recoludeHero = useRef(null);
-
-  // useGSAP(() => {
-  //   let tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: recoludeHero.current,
-  //       scrub: true,
-  //       pin: false,
-  //     },
-  //   });
-  //   tl.from(recoludeHero.current, {
-  //     yPercent: -30,
-  //     ease: "none",
-  //   }).to(recoludeHero.current, {
-  //     yPercent: 30,
-  //     ease: "none",
-  //   });
-  // });
-
   return (
     <div className="mb-10 flex flex-col items-center justify-center">
       <BackButton />
@@ -58,33 +31,39 @@ export default function Recolude() {
         />
       </div>
       <div className="mb-12 mt-10 flex w-full flex-col items-center justify-center">
-        <div className="w-full px-2 font-oxygenLight">
+        <div className="font zodiak w-full">
           <div className="mt-10 flex flex-col items-center justify-center text-left">
-            <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-              <div className="h-16 w-8 rounded-tl-md bg-[#5B1934] lg:w-12" />
-              <div className="flex w-full pl-4">
-                <h2 className="flex-1 px-2 font-oxygenBold">Client:</h2>
-                <h3 className="flex-[3] pr-2">Recolude</h3>
+            <div className="flex w-full max-w-md items-center border-y-2 border-dotted border-neutral-500 md:rounded-t-md md:border-x-2 lg:max-w-2xl lg:text-2xl">
+              <div className="h-24 w-8 bg-[#5B1934] md:rounded-tl-md lg:h-32 lg:w-12" />
+              <div className="flex h-24 w-full lg:h-32">
+                <h2 className="font-zodiak h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                  Client
+                </h2>
+                <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
+                  Recolude
+                </h3>
               </div>
             </div>
-            <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-              <div className="h-20 w-8 bg-[#26142C]  lg:w-12" />
-              <div className="flex w-full pl-4">
-                <h2 className="flex-1 px-2 font-oxygenBold font-bold">
-                  Services:
+            <div className="flex w-full max-w-md items-center border-dotted border-neutral-500 md:border-x-2 lg:max-w-2xl lg:text-2xl">
+              <div className="h-24 w-8 bg-[#26142C] lg:h-32  lg:w-12" />
+              <div className="flex h-24 w-full lg:h-32">
+                <h2 className="font-zodiak h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                  Services
                 </h2>
-                <h3 className="flex-[3] pr-2">
+                <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
                   branding, web design & development
                 </h3>
               </div>
             </div>
-            <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-              <div className="h-16 w-8 rounded-bl-md bg-[#21213E] lg:w-12" />
-              <div className="flex w-full pl-4">
-                <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
-                  Tools:
+            <div className="flex w-full max-w-md items-center border-y-2 border-dotted border-neutral-500 md:rounded-b-md md:border-x-2 lg:max-w-2xl lg:text-2xl">
+              <div className="h-24 w-8 rounded-bl-md bg-[#21213E] lg:h-32 lg:w-12" />
+              <div className="flex h-24 w-full lg:h-32">
+                <h2 className="font-zodiak h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                  Tools
                 </h2>
-                <h3 className="flex-[3] pr-2">Svelte, Three.js, Tailwind</h3>
+                <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
+                  Svelte, Three.js, Tailwind
+                </h3>
               </div>
             </div>
           </div>
@@ -662,14 +641,14 @@ export default function Recolude() {
             />
           </g>
         </svg>
-        <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
+        <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-3xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
           About
         </h2>
-        <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
+        <p className="font-zodiak max-w-sm px-4 text-lg font-light sm:max-w-md lg:max-w-2xl lg:text-2xl">
           Recolude is the platform-agnostic solution for 3D spatial analytics &
           recording for XR, Research, Gaming, and Mocap projects.
         </p>
-        <p className="mt-4 max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
+        <p className="ont-zodiak mt-4 max-w-sm px-4 text-lg font-light sm:max-w-md lg:max-w-2xl lg:text-2xl">
           The goal of our collaboration was to improve their brand design and
           give them a sleek new website.
         </p>
@@ -680,7 +659,7 @@ export default function Recolude() {
             width={2199}
             height={1000}
             sizes="100vw, 50vw"
-            className="mt-10 hidden w-full md:flex lg:w-1/2"
+            className="mt-10  w-full  lg:w-1/2"
           />
 
           <Image
@@ -689,10 +668,10 @@ export default function Recolude() {
             width={3000}
             height={3000}
             sizes="100vw, 50vw"
-            className="mt-10 hidden w-full md:flex lg:w-1/2"
+            className="mt-10 w-full lg:w-1/2"
           />
         </div>
-        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+        <h3 className="font-zodiak mb-8 mt-2 w-full pl-4 font-light lg:pl-16 lg:text-xl">
           Updated Logo
         </h3>
         <Image
@@ -705,14 +684,14 @@ export default function Recolude() {
         />
         <Image
           alt="a mockup showing various pages from the Recolude website"
-          src="recolude-mockup-mobile.webp"
+          src="RecoludeMock2024.webp"
           width={1000}
           height={500}
           sizes="100vw"
           className="mt-10 flex w-full md:hidden"
         />
 
-        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+        <h3 className="font-zodiak mb-8 mt-2 w-full pl-4 font-light lg:pl-16 lg:text-xl">
           Web Design
         </h3>
         <div className="hidden lg:block">
@@ -721,11 +700,11 @@ export default function Recolude() {
         <div className=" lg:hidden">
           <Lottie animationData={mobileTrajectoryAnim} loop={true} />
         </div>
-        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+        <h3 className="font-zodiak mb-8 mt-2 w-full pl-4 font-light lg:pl-16 lg:text-xl">
           Trajectory Animation
         </h3>
         <RecoludeGrid />
-        <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+        <h3 className="font-zodiak mb-8 mt-2 w-full pl-4 font-light lg:pl-16 lg:text-xl">
           Background Grid Shader
         </h3>
         <ProjectStepper nextLink="/product-marketing-portfolio" />

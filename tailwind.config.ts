@@ -10,9 +10,14 @@ const config: Config = {
     extend: {
       fontFamily: {
         dirty: ["var(--font-dirty)"],
+        zodiak: ["var(--font-zodiak)"],
+        zodiakItalic: ["var(--font-zodiak-italic)"],
         oxygenLight: ["var(--font-oxygen-light)"],
         oxygen: ["var(--font-oxygen)"],
         oxygenBold: ["var(--font-oxygen-bold)"],
+      },
+      colors: {
+        primary: "#b32950",
       },
     },
   },

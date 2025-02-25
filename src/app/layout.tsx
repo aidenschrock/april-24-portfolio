@@ -27,6 +27,17 @@ const dirty = localFont({
   variable: "--font-dirty",
 });
 
+const zodiak = localFont({
+  src: "./zodiak-variable.ttf",
+  display: "swap",
+  variable: "--font-zodiak",
+});
+const zodiakItalic = localFont({
+  src: "./zodiak-variable-italic.ttf",
+  display: "swap",
+  variable: "--font-zodiak-italic",
+});
+
 export const metadata: Metadata = {
   title: "Aiden Schrock",
   description:
@@ -41,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oxygenLight.variable} ${oxygen.variable} ${oxygenBold.variable} ${dirty.variable}`}
+        className={`${oxygenLight.variable} ${oxygen.variable} ${oxygenBold.variable} ${dirty.variable} ${zodiak.variable} ${zodiakItalic.variable}`}
       >
         {children}
       </body>

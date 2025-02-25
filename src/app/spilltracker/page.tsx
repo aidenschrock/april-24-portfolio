@@ -29,31 +29,41 @@ export default function Spilltracker() {
           className="flex xl:hidden"
         />
         <div className="mt-10 flex flex-col items-center justify-center text-left">
-          <div className="w-full px-2 font-oxygenLight">
+          <div className="font-zodiak w-full">
             <div className="mt-10 flex w-full flex-col items-center justify-center text-left">
-              <div className="flex w-full max-w-md items-center rounded-t-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-                <div className="h-16 w-8 rounded-tl-md bg-[#FEB92F] lg:w-12" />
-                <div className="flex w-full pl-4">
-                  <h2 className="flex-1 px-2 font-oxygenBold">Agency:</h2>
-                  <h3 className="flex-[3] pr-2">Hunt, Gather</h3>
+              <div className="flex w-full max-w-md items-center border-y-2 border-dotted border-neutral-500 md:rounded-t-md md:border-x-2 lg:max-w-2xl lg:text-2xl">
+                <div className="h-24 w-8 bg-[#FEB92F] md:rounded-tl-md lg:h-32 lg:w-12" />
+                <div className="flex h-24 w-full lg:h-32">
+                  <h2 className="h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                    Agency
+                  </h2>
+                  <h3 className="flex h-full items-center justify-center px-4 font-oxygen text-xl text-[#ffde9c] hover:text-[#FEB92F] lg:text-2xl">
+                    <a href="https://www.civilization.agency/" target="_blank">
+                      Civilization
+                    </a>
+                  </h3>
                 </div>
               </div>
-              <div className="flex w-full max-w-md items-center border-x-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-                <div className="h-20 w-8 bg-[#14161F]  lg:w-12" />
-                <div className="flex w-full pl-4">
-                  <h2 className="flex-1 px-2 font-oxygenBold font-bold">
-                    Client:
+              <div className="flex w-full max-w-md items-center border-dotted border-neutral-500 md:border-x-2 lg:max-w-2xl lg:text-2xl">
+                <div className="h-24 w-8 bg-[#14161F] lg:h-32  lg:w-12" />
+                <div className="flex h-24 w-full lg:h-32">
+                  <h2 className="h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                    Client
                   </h2>
-                  <h3 className="flex-[3] pr-2">Resources Legacy Fund</h3>
+                  <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
+                    Resources Legacy Fund
+                  </h3>
                 </div>
               </div>
-              <div className="flex w-full max-w-md items-center rounded-b-md border-2 border-dotted border-slate-500 lg:max-w-2xl lg:text-2xl">
-                <div className="h-16 w-8 rounded-bl-md bg-[#111110] lg:w-12" />
-                <div className="flex w-full pl-4">
-                  <h2 className="flex-1 px-2 font-oxygenBold font-bold ">
-                    Tools:
+              <div className="flex w-full max-w-md items-center border-y-2 border-dotted border-neutral-500 md:rounded-b-md md:border-x-2 lg:max-w-2xl lg:text-2xl">
+                <div className="h-24 w-8 rounded-bl-md bg-[#111110] lg:h-32 lg:w-12" />
+                <div className="flex h-24 w-full lg:h-32">
+                  <h2 className="h-full border-r-2 border-dotted border-neutral-500 px-2 py-2 text-center font-semibold [writing-mode:vertical-lr]">
+                    Tools
                   </h2>
-                  <h3 className="flex-[3] pr-2">Webflow, GSAP, Cloudflare</h3>
+                  <h3 className="flex h-full items-center justify-center px-4 font-oxygenLight text-xl lg:text-2xl">
+                    Webflow, GSAP, Cloudflare
+                  </h3>
                 </div>
               </div>
             </div>
@@ -74,14 +84,14 @@ export default function Spilltracker() {
             sizes="100vw"
             className="mt-20 flex w-full md:hidden"
           />
-          <h3 className="mb-8 mt-2 w-full pl-4 font-oxygenLight lg:pl-16 lg:text-xl">
+          <h3 className="font-zodiak mb-8 mt-2 w-full pl-4 font-light lg:pl-16 lg:text-xl">
             Spilltracker Mobile
           </h3>
 
-          <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-2xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
+          <h2 className="mt-12 w-full max-w-sm px-4 font-dirty text-3xl sm:max-w-md lg:max-w-2xl lg:text-4xl">
             About
           </h2>
-          <p className="max-w-sm px-4 font-oxygenLight sm:max-w-md lg:max-w-2xl lg:text-2xl">
+          <p className="font-zodiak max-w-sm px-4 text-lg font-light sm:max-w-md lg:max-w-2xl lg:text-2xl">
             This project was for Beyond Petrochemicals, a project by the
             non-profit Resource Legacy Fund. Some of my favorite features on
             this page include the dynamic list of accidents, the sticky ticker,

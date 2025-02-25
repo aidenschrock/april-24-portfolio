@@ -21,25 +21,25 @@ function Navbar() {
       <nav
         aria-label="Main menu"
         role="navigation"
-        className="font-oxygenLight fixed z-20 hidden w-full items-center justify-between px-24 py-6 uppercase backdrop-blur-md md:flex"
+        className="font-zodiak fixed z-20 hidden w-full items-center justify-between px-24 py-6 backdrop-blur-md md:flex"
       >
-        <h4 className="text-2xl  font-bold italic">Aiden Schrock</h4>
-        <ul className="flex gap-4 text-2xl font-bold  text-slate-200 ">
+        <h4 className="font-zodiakItalic text-2xl">Aiden Schrock</h4>
+        <ul className="flex gap-4 text-2xl font-medium text-slate-200 ">
           <li
             onClick={() => lenis?.scrollTo("#home")}
-            className="cursor-pointer hover:text-pink-600"
+            className="hover:text-primary cursor-pointer"
           >
             Home
           </li>
           <li
             onClick={() => lenis?.scrollTo("#work")}
-            className="cursor-pointer hover:text-pink-600"
+            className="hover:text-primary cursor-pointer"
           >
             Work
           </li>
           <li
             onClick={() => lenis?.scrollTo("#contact")}
-            className="cursor-pointer hover:text-pink-600"
+            className="hover:text-primary cursor-pointer"
           >
             Contact
           </li>
@@ -50,10 +50,10 @@ function Navbar() {
         aria-expanded={`${mobileNavShow ? "true" : "false"}`}
         aria-label="Mobile menu"
         role="navigation"
-        className="font-oxygenLight fixed z-20 flex w-full flex-col uppercase  backdrop-blur-md md:hidden"
+        className="font-zodiak fixed z-20 flex w-full flex-col uppercase  backdrop-blur-md md:hidden"
       >
         <div className="z-20 flex w-full items-center justify-between p-6">
-          <h4 className="text-xl  font-bold italic">Aiden Schrock</h4>
+          <h4 className="font-zodiakItalic text-xl">Aiden Schrock</h4>
           <button aria-label="Mobile Menu" onClick={toggleMenu}>
             <svg
               className={`fill-slate-200 ${mobileNavShow ? "hidden" : "flex"}`}
@@ -81,7 +81,7 @@ function Navbar() {
             mobileNavShow ? "blockScroll flex" : "hidden"
           }`}
         >
-          <ul className="ml-auto mr-0 flex flex-col justify-end gap-8 pb-32 pr-12 text-right">
+          <ul className="ml-auto mr-0 flex flex-col justify-end gap-8 pb-32 pr-12 text-right font-medium">
             <li>
               <a href="#home">Home</a>
             </li>

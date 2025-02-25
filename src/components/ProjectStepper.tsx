@@ -10,7 +10,7 @@ export default function ProjectStepper(props: ProjectStepperProps) {
   return (
     <button
       data-testid="next-project"
-      className="project-button mt-12 flex w-11/12 max-w-2xl items-center justify-center gap-4 rounded border-2 border-dotted border-white py-2 font-oxygen text-lg transition-colors hover:bg-slate-200 hover:text-black lg:text-2xl xl:text-3xl"
+      className="project-button font-zodiak mb-12 mt-6 flex w-11/12 max-w-2xl items-center justify-center gap-4 rounded border-2 border-dotted border-white py-2 text-lg transition-colors hover:bg-slate-200 hover:text-black md:mt-12 lg:text-2xl xl:text-3xl"
       onClick={() => router.push(props.nextLink)}
     >
       Next Project{" "}
