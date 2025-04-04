@@ -21,25 +21,26 @@ function Navbar() {
       <nav
         aria-label="Main menu"
         role="navigation"
-        className="font-zodiak fixed z-20 hidden w-full items-center justify-between px-24 py-6 backdrop-blur-md md:flex"
+        className="fixed z-20 hidden w-full items-center justify-between px-24 py-6 font-zodiak backdrop-blur-md md:flex"
       >
         <h4 className="font-zodiakItalic text-2xl">Aiden Schrock</h4>
+        <h4 className="hidden lg:block">Available May 2025</h4>
         <ul className="flex gap-4 text-2xl font-medium text-slate-200 ">
           <li
             onClick={() => lenis?.scrollTo("#home")}
-            className="hover:text-primary cursor-pointer"
+            className="cursor-pointer hover:text-primary"
           >
             Home
           </li>
           <li
             onClick={() => lenis?.scrollTo("#work")}
-            className="hover:text-primary cursor-pointer"
+            className="cursor-pointer hover:text-primary"
           >
             Work
           </li>
           <li
             onClick={() => lenis?.scrollTo("#contact")}
-            className="hover:text-primary cursor-pointer"
+            className="cursor-pointer hover:text-primary"
           >
             Contact
           </li>
@@ -50,7 +51,7 @@ function Navbar() {
         aria-expanded={`${mobileNavShow ? "true" : "false"}`}
         aria-label="Mobile menu"
         role="navigation"
-        className="font-zodiak fixed z-20 flex w-full flex-col uppercase  backdrop-blur-md md:hidden"
+        className="fixed z-20 flex w-full flex-col font-zodiak uppercase  backdrop-blur-md md:hidden"
       >
         <div className="z-20 flex w-full items-center justify-between p-6">
           <h4 className="font-zodiakItalic text-xl">Aiden Schrock</h4>
