@@ -9,6 +9,7 @@ import SquareGradient from "@/components/SquareGradient";
 import Ballpit from "@/components/Ballpit";
 import BrandBlocks from "@/components/BrandBlocks";
 import Link from "next/link";
+import About from "@/components/About";
 
 export default function Home() {
   // lenis instance
@@ -40,7 +41,7 @@ export default function Home() {
   return (
     <ReactLenis root options={{ duration: 0.8 }}>
       <Navbar />
-      <main className="font-zodiak flex min-h-screen flex-col items-center justify-between">
+      <main className="flex min-h-screen flex-col items-center justify-between font-zodiak">
         <div
           id="home"
           className="flex h-[80vh] w-full items-center justify-center md:h-screen "
@@ -49,25 +50,7 @@ export default function Home() {
             Creative <br /> Developer
           </h1>
         </div>
-        <div
-          id="about"
-          className="flex h-[90vh] w-full flex-col items-center justify-center gap-6 p-6 sm:p-14 md:h-[80vh] md:gap-32 lg:flex-row"
-        >
-          <div>
-            <h2 className="font-dirty text-5xl sm:text-7xl md:text-8xl lg:text-9xl">
-              Hello!
-            </h2>
-          </div>
-
-          <p className="font-zodiak max-w-3xl bg-transparent text-xl font-light sm:text-2xl lg:max-w-lg lg:text-3xl">
-            My name is Aiden, and I&#8217;m an independent creative developer
-            based in Austin, TX. I&#8217;m in love with the process of making
-            fun and unique web experiences. <br />
-            <br /> Let&#8217;s bring your ideas to life by creating websites
-            that not only engage your audience but also leave a lasting
-            impression!
-          </p>
-        </div>
+        <About />
         <div id="work" className="flex h-screen w-full flex-col justify-center">
           <h2 className="text-center font-dirty text-3xl sm:text-4xl lg:text-5xl">
             Selected Work
@@ -259,7 +242,7 @@ export default function Home() {
                 id="tooltip"
                 className={`${
                   tooltipVisibility ? "visible" : "invisible"
-                } border-primary relative mt-4 flex h-10 w-40 items-center justify-center rounded-md border-2 border-dotted bg-slate-900/50`}
+                } relative mt-4 flex h-10 w-40 items-center justify-center rounded-md border-2 border-dotted border-primary bg-slate-900/50`}
               >
                 <span
                   id="tooltiptext"
@@ -272,7 +255,7 @@ export default function Home() {
               </div>
               <svg
                 onClick={copy}
-                className="hover:fill-primary h-auto w-12 fill-white lg:w-16"
+                className="h-auto w-12 fill-white hover:fill-primary lg:w-16"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
                 width="24"
@@ -280,7 +263,7 @@ export default function Home() {
                 <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Z" />
               </svg>
               <svg
-                className="hover:fill-primary h-auto w-12 fill-white lg:w-16"
+                className="h-auto w-12 fill-white hover:fill-primary lg:w-16"
                 onClick={sendEmail}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
@@ -292,7 +275,7 @@ export default function Home() {
           </div>
           <div className="socials flex gap-x-6 text-2xl sm:text-3xl lg:text-4xl ">
             <a
-              className=" hover:text-primary"
+              className=" hover:cursor-pointer hover:text-primary"
               href="https://www.linkedin.com/in/aiden-schrock/"
               target="_blank"
               rel="noreferrer"
@@ -300,7 +283,7 @@ export default function Home() {
               LinkedIn
             </a>
             <a
-              className=" hover:text-primary"
+              className=" hover:cursor-pointer hover:text-primary"
               href="https://bsky.app/profile/aiden-schrock.bsky.social"
               target="_blank"
               rel="noreferrer"
